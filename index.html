@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="programmer.png" type="image/png">
+    <title>Shomi Khan</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #e4f3d3 0%, #bbf3a1 100%);
+            font-family: 'Courier New', monospace;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 24px;
+            max-width: 350px;
+            width: 90%;
+        }
+
+        .card h2 {
+            font-size: 24px;
+            color: #ff6f61;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .card p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            text-align: center;
+        }
+
+        .card .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .card .social-links a {
+            text-decoration: none;
+        }
+
+        .card .social-links img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 480px) {
+            .card {
+                padding: 16px;
+                max-width: 300px;
+            }
+
+            .card h2 {
+                font-size: 20px;
+            }
+
+            .card p {
+                font-size: 16px;
+            }
+
+            .card .social-links img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .card {
+                max-width: 400px;
+            }
+
+            .card h2 {
+                font-size: 26px;
+            }
+
+            .card p {
+                font-size: 20px;
+            }
+
+            .card .social-links img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>👋🤓 Hey there!</h2>
+        <p>This is Shomi Khan, a passionate programmer 💻 from Bangladesh 🇧🇩 who loves reasoning games 🧠 and anime 🐉. Always up for a good chat and learning cool stuff. Feel free to ping me anytime! 😊</p>
+        
+        <div class="social-links">
+            <a href="https://github.com/nahK994" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+            </a>
+            <a href="https://linkedin.com/in/shomi-khan-64b418118" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
