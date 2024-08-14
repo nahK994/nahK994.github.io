@@ -12,8 +12,17 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #f0f3d1 0%, #cef3bd 100%);
+            background: linear-gradient(135deg, #f4f6ed 0%, #e2f7ce 100%);
             font-family: 'Courier New', monospace;
+        }
+
+        .intro {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .intro p {
+            width: 60%;
         }
 
         .card {
@@ -24,25 +33,12 @@
             max-width: 400px;
             width: 90%;
             text-align: center;
-            position: relative;
-            padding-top: 60px; /* Added space to accommodate the image */
-        }
-
-        .card img.profile {
-            border-radius: 20%;
- 
-            position: absolute;
-            top: -50px; /* Half of the image height */
-            left: 50%;
-            transform: translateX(-50%);
-            border: 3px solid #ff6f61;
-            background-color: white; /* Adds a background to match the card */
         }
 
         .card h2 {
             font-size: 26px;
             color: #ff6f61;
-            margin-bottom: 15px;
+            /* margin-bottom: 15px; */
         }
 
         .card p {
@@ -111,11 +107,12 @@
 </head>
 <body>
     <div class="card">
-        <img src="programmer.png" class="profile" height="100" width="100" alt="Shomi Khan">
         <h2>👋🤓 Hey there!!</h2>
-        <p>I'm Shomi Khan, your friendly neighborhood programmer 🤘 from Bangladesh 🇧🇩.</p>
-        <p>When I’m not coding, you can find me munching on snacks 🍗🍟, binge-watching anime ⛩️, or blasting through shooting games 💥.</p>
-        <p>Always up for a chat or to dive into cool new stuff. So don't be shy—hit me up anytime!! 😊</p>
+        <span class="intro">
+            <p>I'm Shomi Khan, your friendly neighborhood programmer 🤘 from Bangladesh 🇧🇩.</p>
+            <img src="programmer.png" height="100" width="100" alt="Shomi Khan">
+        </span>
+        <p>You can also find me munching on snacks 🍗🍟, binge-watching anime ⛩️. Always up for a chat or to dive into cool new stuff. So don't be shy—hit me up anytime!! 😊😊😊</p>
         
         <div class="social-links">
             <a href="https://github.com/nahK994" target="_blank">
