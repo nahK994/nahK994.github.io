@@ -64,11 +64,48 @@
             height: 35px;
         }
 
-        /* Media queries for responsiveness */
-        @media (max-width: 767px) {
+        /* Media queries for small mobile screens */
+        @media (max-width: 425px) {
             .card {
                 padding: 16px;
-                width: 80%;
+                max-width: 80%;
+            }
+
+            .card h2 {
+                font-size: 20px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+
+            .social-links img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .intro {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 12px;
+            }
+
+            .intro img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .intro p {
+                width: 100%;
+            }
+        }
+
+        /* Media queries for tablets */
+        @media (min-width: 426px) and (max-width: 767px) {
+            .card {
+                padding: 20px;
+                max-width: 400px;
             }
 
             .card h2 {
@@ -80,27 +117,42 @@
             }
 
             .social-links img {
-                width: 30px;
-                height: 30px;
+                width: 35px;
+                height: 35px;
+            }
+
+            .intro img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .intro p {
+                width: 70%;
             }
         }
 
-        @media (min-width: 768px) {
+        /* Media queries for desktop screens */
+        @media (min-width: 768px) and (max-width: 1999px) {
             .card {
-                max-width: 450px;
+                max-width: 400px;
             }
 
             .card h2 {
-                font-size: 28px;
+                font-size: 26px;
             }
 
             .card p {
-                font-size: 20px;
+                font-size: 18px;
             }
 
             .social-links img {
                 width: 40px;
                 height: 40px;
+            }
+
+            .intro img {
+                width: 100px;
+                height: 100px;
             }
         }
 
@@ -126,6 +178,11 @@
             .social-links img {
                 width: 50px;
                 height: 50px;
+            }
+
+            .intro img {
+                width: 100px;
+                height: 100px;
             }
         }
     </style>
