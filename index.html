@@ -15,15 +15,7 @@
             margin: 0;
             background: linear-gradient(135deg, #f4f6ed 0%, #e2f7ce 100%);
             font-family: 'Courier New', monospace;
-        }
-
-        .intro {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .intro p {
-            width: 60%;
+            overflow: hidden;
         }
 
         .card {
@@ -34,11 +26,59 @@
             max-width: 400px;
             width: 90%;
             text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            transform: translateY(20px);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .card h2 {
             font-size: 26px;
             color: #ff6f61;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 12px;
+        }
+
+        .emoji {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wave-emoji {
+            display: inline-block;
+            animation: wave 1s infinite;
+        }
+
+        .face-emoji {
+            margin-bottom: 16px;
+        }
+
+        @keyframes wave {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(45deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
         }
 
         .card p {
@@ -62,6 +102,15 @@
         .social-links img {
             width: 35px;
             height: 35px;
+        }
+
+        .intro {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .intro p {
+            width: 60%;
         }
 
         /* Media queries for small mobile screens */
@@ -190,7 +239,13 @@
 
 <body>
     <div class="card">
-        <h2>👋🤓 Hey there!!🎉</h2>
+        <h2>
+            <span class="emoji">
+                <span class="wave-emoji">👋</span>
+                <span class="face-emoji">🤓</span>
+            </span>
+            <span>Hey there!!🎉</span>
+        </h2>
         <span class="intro">
             <p>I'm Shomi Khan, your friendly neighborhood programmer 🤘 from Bangladesh 🇧🇩.</p>
             <img src="programmer.png" height="100" width="100" alt="Shomi Khan">
