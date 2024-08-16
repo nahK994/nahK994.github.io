@@ -133,7 +133,7 @@ body {
 @media (max-width: 429px) {
     .card {
         padding: 16px;
-        max-width: 70%;
+        width: 80%;
     }
 
     .card h2 {
