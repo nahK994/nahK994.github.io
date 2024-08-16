@@ -9,6 +9,26 @@ body {
     overflow: hidden;
 }
 
+.blast {
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    animation: blastA 2s infinite;
+}
+
+@keyframes blastA {
+    0% {
+        font-size: 0em;
+    }
+
+    100% {
+        font-size: 1em;
+    }
+}
+
 .card {
     border: 2px dashed #ff6f61;
     background-color: white;
@@ -120,7 +140,7 @@ body {
         font-size: 20px;
     }
 
-    .card p {
+    .card .blast p {
         font-size: 14px;
     }
 
@@ -157,7 +177,7 @@ body {
         font-size: 22px;
     }
 
-    .card p {
+    .card .blast p {
         font-size: 16px;
     }
 
@@ -186,7 +206,7 @@ body {
         font-size: 26px;
     }
 
-    .card p {
+    .card .blast p {
         font-size: 18px;
     }
 
@@ -216,7 +236,7 @@ body {
         font-size: 32px;
     }
 
-    .card p {
+    .card .blast p {
         font-size: 22px;
     }
 
