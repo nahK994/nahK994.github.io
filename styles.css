@@ -136,8 +136,8 @@ body {
 /* Media queries for small mobile screens */
 @media (max-width: 429px) {
     .card {
-        padding: 16px;
-        width: 220px;
+        padding: 12px;
+        width: 70%;
     }
 
     .card h2 {
