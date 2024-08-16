@@ -9,8 +9,11 @@ body {
     overflow: hidden;
 }
 
+.blast-container {
+    width: 1em;
+}
+
 .blast {
-    height: 18px;
     width: 18px;
     display: inline-flex;
     justify-content: center;
@@ -75,6 +78,7 @@ body {
 
 .wave-emoji {
     display: inline-block;
+    font-size: 0.8em;
     animation: wave 1s infinite;
 }
 
@@ -133,15 +137,25 @@ body {
 @media (max-width: 429px) {
     .card {
         padding: 16px;
-        width: 80%;
+        width: 220px;
     }
 
     .card h2 {
         font-size: 20px;
     }
 
-    .card .blast p {
+    .card p {
         font-size: 14px;
+    }
+
+    .blast-container {
+        width: 14px;
+        height: 14px;
+    }
+
+    .blast {
+        width: 14px;
+        height: 14px;
     }
 
     .social-links img {
@@ -177,8 +191,18 @@ body {
         font-size: 22px;
     }
 
-    .card .blast p {
+    .card p {
         font-size: 16px;
+    }
+
+    .blast-container {
+        width: 16px;
+        height: 16px;
+    }
+
+    .blast {
+        width: 16px;
+        height: 16px;
     }
 
     .social-links img {
@@ -206,8 +230,18 @@ body {
         font-size: 26px;
     }
 
-    .card .blast p {
+    .card p {
         font-size: 18px;
+    }
+
+    .blast-container {
+        width: 18px;
+        height: 18px;
+    }
+
+    .blast {
+        width: 18px;
+        height: 18px;
     }
 
     .social-links img {
@@ -236,8 +270,18 @@ body {
         font-size: 32px;
     }
 
-    .card .blast p {
+    .card p {
         font-size: 22px;
+    }
+
+    .blast-container {
+        width: 22px;
+        height: 22px;
+    }
+
+    .blast {
+        width: 22px;
+        height: 22px;
     }
 
     .social-links img {
