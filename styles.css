@@ -127,6 +127,7 @@ body {
 .intro {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .intro p {
@@ -223,7 +224,7 @@ body {
 /* Media queries for desktop screens */
 @media (min-width: 768px) and (max-width: 1999px) {
     .card {
-        max-width: 380px;
+        max-width: 450px;
     }
 
     .card h2 {
@@ -258,7 +259,7 @@ body {
 /* Media query for extra large screens */
 @media (min-width: 2000px) {
     .card {
-        max-width: 470px;
+        max-width: 480px;
         padding: 28px;
     }
 
