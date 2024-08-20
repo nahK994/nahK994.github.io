@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1em;
-    animation: blastA 2s infinite;
+    animation: blastA 1s infinite;
 }
 
 @keyframes blastA {
