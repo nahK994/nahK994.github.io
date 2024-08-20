@@ -74,7 +74,7 @@ body {
     margin-bottom: 12px;
 
     .text {
-        text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #059b37, 0 0 2px #059b37, 0 0 12px #059b37, 0 0 2px #059b37, 0 0 2px #059b37;
+        text-shadow: 0 0 10px #fff, 0 0 1px #fff, 0 0 2px #059b37, 0 0 2px #059b37, 0 0 12px #059b37, 0 0 2px #059b37, 0 0 2px #059b37;
     }
 }
 
@@ -117,11 +117,7 @@ body {
 }
 
 .highlighted-text {
-    /* background: -webkit-linear-gradient(#889088, #c1e4c7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    /* font-weight: 900; */
-    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #059b37, 0 0 2px #059b37, 0 0 12px #059b37, 0 0 2px #059b37, 0 0 2px #059b37;
+    text-shadow: 0 0 2px #fff, 0 0 1px #fff, 0 0 1px #059b37, 0 0 1px #059b37, 0 0 12px #059b37, 0 0 1px #059b37, 0 0 1px #059b37;
 }
 
 .social-links {
