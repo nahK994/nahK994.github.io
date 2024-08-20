@@ -70,7 +70,7 @@ body {
     
     .text {
         color: #ff6f61;
-        text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #ecb3ad, 0 0 2px #ecb3ad, 0 0 12px #ecb3ad, 0 0 2px #ecb3ad, 0 0 2px #ecb3ad;
+        text-shadow: 0 0 10px #fff, 0 0 1px #fff, 0 0 2px #ecb3ad, 0 0 2px #ecb3ad, 0 0 12px #ecb3ad, 0 0 2px #ecb3ad, 0 0 2px #ecb3ad;
     }
 }
 
@@ -113,12 +113,8 @@ body {
 }
 
 .highlighted-text {
-    /* background: -webkit-linear-gradient(#889088, #c1e4c7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    /* font-weight: 900; */
     color: #ff6f61;
-    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #ecb3ad, 0 0 1px #ecb3ad, 0 0 12px #ecb3ad, 0 0 1px #ecb3ad, 0 0 1px #ecb3ad;
+    text-shadow: 0 0 10px #fff, 0 0 1px #fff, 0 0 1px #ecb3ad, 0 0 1px #ecb3ad, 0 0 12px #ecb3ad, 0 0 1px #ecb3ad, 0 0 1px #ecb3ad;
 }
 
 .social-links {
