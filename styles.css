@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #f9fcf3 0%, #e2f7ce 100%);
+    background: linear-gradient(135deg, #183b1f 0%, #0c0c0c 100%);
     font-family: 'Courier New', monospace;
     overflow: hidden;
 }
@@ -33,10 +33,6 @@ body {
 }
 
 .card {
-    border: 2px dashed #ff6f61;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     padding: 24px;
     max-width: 400px;
     width: 90%;
@@ -44,6 +40,15 @@ body {
     opacity: 0;
     animation: fadeIn 3s forwards;
     transform: translateY(20px);
+    color: white;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    border: 2px dashed rgba(255, 255, 255, 0.7);
 }
 
 @keyframes fadeIn {
@@ -60,7 +65,6 @@ body {
 
 .card h2 {
     font-size: 26px;
-    color: #ff6f61;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -68,6 +72,10 @@ body {
     column-gap: 12px;
     margin-top: 8px;
     margin-bottom: 12px;
+
+    .text {
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #059b37, 0 0 2px #059b37, 0 0 12px #059b37, 0 0 2px #059b37, 0 0 2px #059b37;
+    }
 }
 
 .emoji {
@@ -104,8 +112,16 @@ body {
 .card p {
     font-size: 18px;
     line-height: 1.6;
-    color: #333;
+    color: white;
     margin: 0 0 15px;
+}
+
+.highlighted-text {
+    /* background: -webkit-linear-gradient(#889088, #c1e4c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    /* font-weight: 900; */
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #059b37, 0 0 2px #059b37, 0 0 12px #059b37, 0 0 2px #059b37, 0 0 2px #059b37;
 }
 
 .social-links {
