@@ -7,9 +7,40 @@ body {
     /* background: linear-gradient(135deg, #337841 0%, #013e17 100%); */
     font-family: 'Courier New', monospace;
     overflow: hidden;
-    background-image: url("1.jpg");
+    background-image: url("https://i.ibb.co.com/z8DPgNK/5.jpg");
     background-repeat: no-repeat;
     /* background-size: auto 100%; */
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    font-size: 100px;
+
+    .text {
+        font-weight: bold;
+        background: linear-gradient(rgb(88, 223, 88), rgb(131, 131, 240));
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+body.loaded #loader {
+    display: none;
+}
+
+body:not(.loaded) .card {
+    display: none;
 }
 
 .blast-container {
