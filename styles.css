@@ -4,12 +4,12 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #337841 0%, #013e17 100%);
+    /* background: linear-gradient(135deg, #337841 0%, #013e17 100%); */
     font-family: 'Courier New', monospace;
     overflow: hidden;
-    /* background-image: url("4.jpg");
+    background-image: url("1.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%; */
+    /* background-size: auto 100%; */
 }
 
 .blast-container {
@@ -45,15 +45,13 @@ body {
     transform: translateY(20px);
     color: white;
 
-    /* From https://css.glass */
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    /* box-shadow: 0 0 10px #fff, 0 0 1px #fff, 0 0 2px #059b37, 0 0 2px #059b37, 0 0 12px #059b37, 0 0 2px #059b37, 0 0 2px #059b37; */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* box-shadow: 0 0 10px #fff, 0 0 1px #fff, 0 0 2px #09447e, 0 0 2px #09447e, 0 0 12px #09447e, 0 0 2px #09447e, 0 0 2px #09447e; */
 }
 
 @keyframes fadeIn {
@@ -79,7 +77,7 @@ body {
     margin-bottom: 12px;
 
     .text {
-        text-shadow: 0 0 10px #fff, 0 0 1px #fff, 0 0 2px #059b37, 0 0 2px #059b37, 0 0 12px #059b37, 0 0 2px #059b37, 0 0 2px #059b37;
+        text-shadow: 0 0 10px #fff, 0 0 1px #fff, 0 0 2px #09447e, 0 0 2px #09447e, 0 0 12px #09447e, 0 0 2px #09447e, 0 0 2px #09447e;
     }
 }
 
@@ -122,7 +120,7 @@ body {
 }
 
 .highlighted-text {
-    text-shadow: 0 0 2px #fff, 0 0 1px #fff, 0 0 1px #059b37, 0 0 1px #059b37, 0 0 12px #059b37, 0 0 1px #059b37, 0 0 1px #059b37;
+    text-shadow: 0 0 2px #fff, 0 0 1px #fff, 0 0 1px #09447e, 0 0 1px #09447e, 0 0 12px #09447e, 0 0 1px #09447e, 0 0 1px #09447e;
 }
 
 .social-links {
@@ -153,6 +151,10 @@ body {
 
 /* Media queries for small mobile screens */
 @media (max-width: 429px) {
+    body {
+        background-size: auto 100%;
+    }
+
     .card {
         padding: 12px;
         width: 70%;
@@ -200,6 +202,10 @@ body {
 
 /* Media queries for tablets */
 @media (min-width: 430px) and (max-width: 767px) {
+    body {
+        background-size: auto 100%;
+    }
+
     .card {
         padding: 20px;
         max-width: 340px;
@@ -240,6 +246,10 @@ body {
 
 /* Media queries for desktop screens */
 @media (min-width: 768px) and (max-width: 1999px) {
+    body {
+        background-size: 100% 100%;
+    }
+
     .card {
         max-width: 380px;
     }
@@ -275,6 +285,10 @@ body {
 
 /* Media query for extra large screens */
 @media (min-width: 2000px) {
+    body {
+        background-size: 100% 100%;
+    }
+
     .card {
         max-width: 440px;
         padding: 28px;
