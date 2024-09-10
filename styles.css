@@ -301,7 +301,7 @@ body:not(.loaded) .card {
     }
 
     .card {
-        max-width: 380px;
+        max-width: 390px;
     }
 
     .card h2 {
