@@ -10,19 +10,6 @@
 </head>
 
 <body>
-    <!-- Loader with fullscreen background -->
-    <div id="loader">
-        <span class="greet">
-            <span class="emoji">
-                <span class="wave-emoji">👋</span>
-                <span class="face-emoji">🤓</span>
-            </span>
-            <span class="text">Hey there!!</span>
-            <span>🎉</span>
-        </span>
-    </div>
-
-    <!-- Main content -->
     <div class="card">
         <h2 class="greet">
             <span class="emoji">
@@ -47,38 +34,16 @@
 
         <div class="social-links">
             <a href="https://github.com/nahK994" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"
-                    style="filter: invert(100%);">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub" width="40" height="40">
             </a>
             <a href="https://linkedin.com/in/shomi-khan-64b418118" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"
-                    style="filter: invert(100%);">
+                <img src="https://cdn-icons-png.flaticon.com/512/1409/1409945.png" alt="LinkedIn" width="40" height="40">
             </a>
             <a href="https://www.facebook.com/shomi.khan1/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook"
-                    style="filter: invert(100%);">
-            </a>
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="40" height="40">
+            </a>                                           
         </div>
     </div>
-
-    <!-- JavaScript to detect when everything (including background) is fully loaded -->
-    <script>
-        window.addEventListener('load', function () {
-            var bodyBackground = new Image();
-            var bodyStyle = window.getComputedStyle(document.body);
-            var backgroundImage = bodyStyle.getPropertyValue('background-image');
-
-            // Extract the URL from the background-image property
-            backgroundImage = backgroundImage.replace('url(', '').replace(')', '').replace(/\"/g, '');
-
-            bodyBackground.src = backgroundImage;
-
-            // Wait until the main background image is fully loaded
-            bodyBackground.onload = function () {
-                document.body.classList.add('loaded');
-            };
-        });
-    </script>
 
 </body>
 

@@ -7,40 +7,9 @@ body {
     /* background: linear-gradient(135deg, #337841 0%, #013e17 100%); */
     font-family: 'Courier New', monospace;
     overflow: hidden;
-    background-image: url("https://i.ibb.co.com/z8DPgNK/5.jpg");
+    background-image: url("bg.jpg");
     background-repeat: no-repeat;
     /* background-size: auto 100%; */
-}
-
-#loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    font-size: 24px;
-
-    .text {
-        font-weight: bold;
-        background: linear-gradient(rgb(88, 223, 88), rgb(131, 131, 240));
-        -webkit-background-clip: text;
-                background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-
-body.loaded #loader {
-    display: none;
-}
-
-body:not(.loaded) .card {
-    display: none;
 }
 
 .blast-container {
@@ -79,7 +48,7 @@ body:not(.loaded) .card {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     /* box-shadow: 0 0 10px #fff, 0 0 1px #fff, 0 0 2px #09447e, 0 0 2px #09447e, 0 0 12px #09447e, 0 0 2px #09447e, 0 0 2px #09447e; */
@@ -108,7 +77,7 @@ body:not(.loaded) .card {
     margin-bottom: 12px;
 
     .text {
-        text-shadow: 0 0 10px #fff, 0 0 1px #fff, 0 0 2px #09447e, 0 0 2px #09447e, 0 0 12px #09447e, 0 0 2px #09447e, 0 0 2px #09447e;
+        text-shadow: 0 0 10px #fff, 0 0 1px #fff, 0 0 2px #948306, 0 0 2px #948306, 0 0 12px #948306, 0 0 2px #948306, 0 0 2px #948306;
     }
 }
 
@@ -158,7 +127,7 @@ body:not(.loaded) .card {
 }
 
 .highlighted-text {
-    text-shadow: 0 0 2px #fff, 0 0 1px #fff, 0 0 1px #09447e, 0 0 1px #09447e, 0 0 12px #09447e, 0 0 1px #09447e, 0 0 1px #09447e;
+    text-shadow: 0 0 2px #fff, 0 0 1px #fff, 0 0 1px #948306, 0 0 1px #948306, 0 0 12px #948306, 0 0 1px #948306, 0 0 1px #948306;
 }
 
 .social-links {
