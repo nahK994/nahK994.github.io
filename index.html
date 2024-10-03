@@ -10,19 +10,6 @@
 </head>
 
 <body>
-    <!-- Loader with fullscreen background -->
-    <div id="loader">
-        <span class="greet">
-            <span class="emoji">
-                <span class="wave-emoji">👋</span>
-                <span class="face-emoji">🤓</span>
-            </span>
-            <span class="text">Hey there!!</span>
-            <span>🎉</span>
-        </span>
-    </div>
-
-    <!-- Main content -->
     <div class="card">
         <h2 class="greet">
             <span class="emoji">
@@ -57,24 +44,6 @@
             </a>                                           
         </div>
     </div>
-
-    <script>
-        window.addEventListener('load', function () {
-            var bodyBackground = new Image();
-            var bodyStyle = window.getComputedStyle(document.body);
-            var backgroundImage = bodyStyle.getPropertyValue('background-image');
-
-            // Extract the URL from the background-image property
-            backgroundImage = backgroundImage.replace('url(', '').replace(')', '').replace(/\"/g, '');
-
-            bodyBackground.src = backgroundImage;
-
-            // Wait until the main background image is fully loaded
-            bodyBackground.onload = function () {
-                document.body.classList.add('loaded');
-            };
-        });
-    </script>
 </body>
 
 </html>
