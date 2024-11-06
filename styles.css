@@ -6,12 +6,14 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    background-color: #2d2a2e;
+    color: #e0e0e0;
 }
 
 .content {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     height: 100%;
     overflow: hidden;
 }
@@ -21,11 +23,19 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    background-color: #3c3a40;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .home-button img {
     width: 36px;
     height: 36px;
+    filter: brightness(0.85);
+    transition: filter 0.3s;
+}
+
+.home-button img:hover {
+    filter: brightness(1);
 }
 
 .social-links {
@@ -40,6 +50,12 @@ body {
 .social-links img {
     width: 28px;
     height: 28px;
+    filter: brightness(0.75);
+    transition: filter 0.3s;
+}
+
+.social-links img:hover {
+    filter: brightness(1);
 }
 
 .card {
@@ -47,11 +63,11 @@ body {
     opacity: 0;
     animation: fadeIn 2s forwards;
     transform: translateY(20px);
-    color: #d4d4d4;
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    border: 1px solid #333;
+    color: #f5f5f5;
+    background-color: #35333a;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid #444;
 }
 
 @keyframes fadeIn {
@@ -69,36 +85,36 @@ body {
 pre {
     overflow: auto;
     margin: 0;
-    padding: 8px 16px 0px 16px;
-    background-color: #1e1e1e;
-    color: #d4d4d4;
+    padding: 0px 18px;
+    background-color: #2d2a2e;
+    color: #e0e0e0;
     font-size: 1rem;
     border-radius: 8px;
-    border-left: 4px solid #007acc;
+    border-left: 4px solid #c678dd;
 }
 
 code {
     font-family: "Courier New", Courier, monospace;
 }
 
-/* Syntax highlighting */
 .keyword {
-    color: #569cd6;
+    color: #c678dd; /* Lavender purple for keywords */
+    font-weight: bold;
 }
 
 .string {
-    color: #ce9178;
+    color: #98c379; /* Soft green for strings */
 }
 
 .comment {
-    color: #6a9955;
+    color: #5c6370; /* Dark gray for comments */
     font-style: italic;
 }
 
 .function {
-    color: #dcdcaa;
+    color: #61afef; /* Light blue for function names */
 }
 
 .variable {
-    color: #9cdcfe;
+    color: #e5c07b; /* Warm yellow for variables */
 }
