@@ -16,50 +16,13 @@ body {
     align-items: center;
     height: 100%;
     overflow: hidden;
-}
-
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #3c3a40;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.home-button img {
-    width: 36px;
-    height: 36px;
-    filter: brightness(0.85);
-    transition: filter 0.3s;
-}
-
-.home-button img:hover {
-    filter: brightness(1);
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
-}
-
-.social-links a {
-    color: white;
-}
-
-.social-links img {
-    width: 28px;
-    height: 28px;
-    filter: brightness(0.75);
-    transition: filter 0.3s;
-}
-
-.social-links img:hover {
-    filter: brightness(1);
+    flex-direction: column;
+    padding-top: 20px;
 }
 
 .card {
-    max-width: 80%;
+    width: 70%; /* Fixed width */
+    height: 90%; /* Fixed height */
     opacity: 0;
     animation: fadeIn 2s forwards;
     transform: translateY(20px);
@@ -68,6 +31,35 @@ body {
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
     border: 1px solid #444;
+    overflow: auto; /* Adds scrollbars when content overflows */
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #444;
+    cursor: pointer;
+}
+
+.tab {
+    padding: 10px 20px;
+    color: #e0e0e0;
+    background-color: #3c3a40;
+    margin-right: 2px;
+    transition: background 0.3s;
+}
+
+.tab.active {
+    background-color: #2d2a2e;
+    color: #c678dd;
+    font-weight: bold;
+}
+
+.code-content {
+    display: none;
+}
+
+.code-content.active {
+    display: block;
 }
 
 @keyframes fadeIn {
@@ -75,7 +67,6 @@ body {
         opacity: 0;
         transform: translateY(40px);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -97,24 +88,25 @@ code {
     font-family: "Courier New", Courier, monospace;
 }
 
-.keyword {
-    color: #c678dd; /* Lavender purple for keywords */
-    font-weight: bold;
+.keyword { color: #c678dd; font-weight: bold; }
+.string { color: #98c379; }
+.function { color: #61afef; }
+.variable { color: #e5c07b; }
+.white { color: #fff }
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.string {
-    color: #98c379; /* Soft green for strings */
+.social-links a img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0.75);
+    transition: filter 0.3s;
 }
 
-.comment {
-    color: #5c6370; /* Dark gray for comments */
-    font-style: italic;
-}
-
-.function {
-    color: #61afef; /* Light blue for function names */
-}
-
-.variable {
-    color: #e5c07b; /* Warm yellow for variables */
+.social-links a img:hover {
+    filter: brightness(1);
 }

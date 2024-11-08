@@ -10,29 +10,15 @@
 </head>
 
 <body>
-    <div class="top-bar">
-        <div class="home-button">
-            <a href="#" title="Home">
-                <img src="programmer.png" alt="Home" height="36" width="36">
-            </a>
-        </div>
-        <div class="social-links">
-            <a href="https://github.com/nahK994" target="_blank" title="GitHub">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" alt="GitHub">
-            </a>
-            <a href="https://linkedin.com/in/shomi-khan-64b418118" target="_blank" title="LinkedIn">
-                <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn">
-            </a>
-            <a href="https://www.facebook.com/shomi.khan1/" target="_blank" title="Facebook">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-            </a>
-        </div>
-    </div>
-
     <div class="content">
         <div class="card">
-            <pre>
-                <code>
+            <div class="tabs">
+                <div class="tab active" onclick="showTab('python')">Python</div>
+                <div class="tab" onclick="showTab('golang')">Go</div>
+            </div>
+            <div id="python" class="code-content active">
+<pre>
+<code>
 <span class="keyword">class</span> <span class="function">ShomiKhan</span>:
     <span class="keyword">def</span> <span class="function">__init__</span>(<span class="variable">self</span>):
         <span class="variable">self.role</span> = <span class="string">"Software Engineer"</span>
@@ -71,11 +57,103 @@
 
 <span class="keyword">if</span> <span class="variable">__name__</span> == <span class="string">"__main__"</span>:
     <span class="variable">me</span> = <span class="function">ShomiKhan</span>()
-    <span class="variable">me.greet</span>()
-                </code>
-            </pre>
+    <span class="variable">me</span>.<span class="function">greet</span>()
+</code>
+</pre>
+            </div>
+            <div id="golang" class="code-content">
+<pre>
+    <code>
+<span class="keyword">package</span> <span class="variable">main</span>
+
+<span class="keyword">import</span> <span class="variable">(</span>
+    <span class="string">"fmt"</span>
+<span class="variable">)</span>
+
+<span class="keyword">type</span> <span class="function">ShomiKhan</span> <span class="variable">struct</span> {
+    <span class="variable">Role</span>        <span class="string">string</span>
+    <span class="variable">Interests</span>   <span class="variable">[]string</span>
+    <span class="variable">Languages</span>   <span class="variable">map[string][]string</span>
+    <span class="variable">Hobbies</span>     <span class="variable">[]string</span>
+    <span class="variable">Technologies</span> <span class="variable">struct</span> {
+        <span class="variable">Frameworks</span> <span class="variable">map[string][]string</span>
+        <span class="variable">Databases</span>  <span class="variable">[]string</span>
+        <span class="variable">Tools</span>      <span class="variable">[]string</span>
+        <span class="variable">Libraries</span>  <span class="variable">[]string</span>
+        <span class="variable">MessageQueue</span> <span class="variable">[]string</span>
+        <span class="variable">Cloud</span>      <span class="variable">[]string</span>
+    }
+}
+
+<span class="keyword">func</span> <span class="function">Init</span><span class="variable">()</span> <span class="function">*ShomiKhan</span> {
+    <span class="variable">return <span class="white">&</span>ShomiKhan</span><span class="variable">{</span>
+        <span class="variable">Role</span>: <span class="string">"Software Engineer"</span>,
+        <span class="variable">Interests</span>: []string<span class="variable">{"Low-Level Systems 🛠️", "Machine Learning 🤖", "Web Development 🌐", "Optimizing Algorithms 📈"}</span>,
+        <span class="variable">Languages</span>: map[string][]string{
+            <span class="string">"verbal"</span>: []string<span class="variable">{"bn-BD", "en-US"}</span>,
+            <span class="string">"programming"</span>: []string<span class="variable">{"Python", "Go", "Javascript", "C++"}</span>,
+        },
+        <span class="variable">Hobbies</span>: []string<span class="variable">{"Solving Tech Challenges 🧩", "Riding Bicycle 🚴", "Binging on Anime ⛩️"}</span>,
+        <span class="variable">Technologies</span>: struct {
+            <span class="variable">Frameworks</span> map[string][]string
+            <span class="variable">Databases</span>  []string
+            <span class="variable">Tools</span>      []string
+            <span class="variable">Libraries</span>  []string
+            <span class="variable">MessageQueue</span> []string
+            <span class="variable">Cloud</span>      []string
+        }{
+            <span class="variable">Frameworks</span>: map[string][]string{
+                <span class="string">"backend"</span>: []string<span class="variable">{"Django", "DRF", "FastAPI", "Gorilla"}</span>,
+                <span class="string">"frontend"</span>: []string<span class="variable">{"Angular", "React"}</span>,
+            },
+            <span class="variable">Databases</span>: []string<span class="variable">{"PostgreSQL", "Redis"}</span>,
+            <span class="variable">Tools</span>: []string<span class="variable">{"Docker", "Nginx", "Shell Scripting", "Linux"}</span>,
+            <span class="variable">Libraries</span>: []string<span class="variable">{"Pandas", "NumPy", "BeautifulSoup", "PyTorch", "Pydantic"}</span>,
+            <span class="variable">MessageQueue</span>: []string<span class="variable">{"RabbitMQ"}</span>,
+            <span class="variable">Cloud</span>: []string<span class="variable">{"AWS"}</span>,
+        },
+    }
+}
+
+<span class="keyword">func</span> <span class="function"><span class="variable">(</span>s <span class="white">*</span>ShomiKhan<span class="variable">)</span> greet</span><span class="variable">()</span> {
+    <span class="variable">fmt.<span class="function">Println</span></span>(<span class="string">`
+        Hello,
+        I love to chat 🗨️ rather than talk.
+        If you ping me with a 'hi', I'll be happy to chat with you more! 😊
+    `</span>)
+}
+
+<span class="keyword">func</span> <span class="function">main</span><span class="variable">()</span> {
+    <span class="variable">me</span> := <span class="function">Init</span><span class="variable">()</span>
+    <span class="variable">me.<span class="function">greet()</span></span>
+}
+    </code>
+</pre>                    
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/nahK994" target="_blank" title="GitHub">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" alt="GitHub">
+            </a>
+            <a href="https://linkedin.com/in/shomi-khan-64b418118" target="_blank" title="LinkedIn">
+                <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/shomi.khan1/" target="_blank" title="Facebook">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
         </div>
     </div>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.code-content').forEach(content => content.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            document.querySelector(`.tab[onclick="showTab('${tabId}')"]`).classList.add('active');
+        }
+    </script>
 </body>
 
 </html>
