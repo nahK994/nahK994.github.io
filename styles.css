@@ -20,14 +20,33 @@ body {
 }
 
 .card {
-    width: 70%; /* Fixed width */
-    height: 90%; /* Fixed height */
+    width: 70%;
+    height: 90%;
     color: #f5f5f5;
     background-color: #35333a;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
     border: 1px solid #444;
-    overflow: auto; /* Adds scrollbars when content overflows */
+    overflow: auto;
+}
+
+.card::-webkit-scrollbar {
+    width: 10px;
+}
+
+.card::-webkit-scrollbar-thumb {
+    background: #565264;
+    border-radius: 5px;
+    border: 2px solid #35333a;
+}
+
+.card::-webkit-scrollbar-thumb:hover {
+    background: #7a78a1;
+}
+
+.card::-webkit-scrollbar-track {
+    background: #3c3a40;
+    border-radius: 5px;
 }
 
 .tabs {
@@ -67,6 +86,23 @@ pre {
     font-size: 1rem;
     border-radius: 8px;
     border-left: 4px solid #c678dd;
+}
+
+pre::-webkit-scrollbar {
+    width: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background: #565264;
+    border-radius: 5px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+    background: #7a78a1;
+}
+
+pre::-webkit-scrollbar-track {
+    background: #3c3a40;
 }
 
 code {
