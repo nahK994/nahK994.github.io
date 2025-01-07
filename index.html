@@ -10,151 +10,37 @@
 </head>
 
 <body>
-    <div class="content">
-        <div class="card">
-            <div class="tabs">
-                <div class="tab active" onclick="showTab('python')">Python</div>
-                <div class="tab" onclick="showTab('golang')">Go</div>
-            </div>
-            <div id="python" class="code-content active">
-                <pre>
-<code>
-class ShomiKhan:
-    def __init__(self):
-        self.role = "Software Engineer"
-        self.interests = [
-            "Low-Level Systems 🛠️", "Machine Learning 🤖",
-            "Web Development 🌐", "Optimizing Algorithms 📈"
-        ]
-        self.languages = {
-            "verbal": ["bn-BD", "en-US"],
-            "programming": ["Python", "Go", "Javascript", "C++"]
-        }
-        self.hobbies = [
-            "Solving Tech Challenges 🧩", "Riding Bicycle 🚴", "Binging on Anime ⛩️"
-        ]
-        self.technologies = {
-            "frameworks": {
-                "backend": ["Django", "DRF", "FastAPI", "Gin"],
-                "frontend": ["Angular", "React"]
-            },
-            "databases": ["PostgreSQL", "Redis"],
-            "tools": ["Docker", "Nginx", "Shell Scripting", "Linux"],
-            "libraries": [
-                "Pandas", "NumPy", "BeautifulSoup", "Pydantic"
-            ],
-            "message_queue": ["RabbitMQ"],
-            "cloud": ["AWS"]
-        }
-
-    def greet(self):
-        print('''
-            Hello,
-            I love to chat 🗨️ rather than talk.
-            If you ping me with a `hi`, I'll be happy to chat with you more! 😊
-        ''')
-
-
-if __name__ == "__main__":
-    me = ShomiKhan()
-    me.greet()
-</code>
-                </pre>
-            </div>
-            <div id="golang" class="code-content">
-                <pre>
-<code>
-package main
-
-import (
-    "fmt"
-)
-
-type ShomiKhan struct {
-    Role        string
-    Interests   []string
-    Languages   map[string][]string
-    Hobbies     []string
-    Technologies struct {
-        Frameworks    map[string][]string
-        Databases     []string
-        Tools         []string
-        Libraries     []string
-        MessageQueue  []string
-        Cloud         []string
-    }
-}
-
-func Init() *ShomiKhan {
-    return &ShomiKhan{
-        Role:      "Software Engineer",
-        Interests: []string{"Low-Level Systems 🛠️", "Machine Learning 🤖", "Web Development 🌐", "Optimizing Algorithms 📈"},
-        Languages: map[string][]string{
-            "verbal":      {"bn-BD", "en-US"},
-            "programming": {"Python", "Go", "Javascript", "C++"},
-        },
-        Hobbies: []string{"Solving Tech Challenges 🧩", "Riding Bicycle 🚴", "Binging on Anime ⛩️"},
-        Technologies: struct {
-            Frameworks    map[string][]string
-            Databases     []string
-            Tools         []string
-            Libraries     []string
-            MessageQueue  []string
-            Cloud         []string
-        }{
-            Frameworks: map[string][]string{
-                "backend": {"Django", "DRF", "FastAPI", "Gin"},
-                "frontend": {"Angular", "React"},
-            },
-            Databases:    {"PostgreSQL", "Redis"},
-            Tools:        {"Docker", "Nginx", "Shell Scripting", "Linux"},
-            Libraries:    {"Pandas", "NumPy", "BeautifulSoup", "Pydantic"},
-            MessageQueue: {"RabbitMQ"},
-            Cloud:        {"AWS"},
-        },
-    }
-}
-
-func (s *ShomiKhan) greet() {
-    fmt.Println(`
-        Hello,
-        I love to chat 🗨️ rather than talk.
-        If you ping me with a 'hi', I'll be happy to chat with you more! 😊
-    `)
-}
-
-func main() {
-    me := Init()
-    me.greet()
-}
-</code>
-                </pre>
-            </div>
-        </div>
+    <div class="card">
+        <h2>
+            <span class="emoji">
+                <span class="wave-emoji">👋</span>
+                <span class="face-emoji">🤓</span>
+            </span>
+            <span class="text">Hey there!!</span>🎉
+        </h2>
+        <span class="intro">
+            <p>I'm Shomi Khan, your friendly neighborhood techie 🖥️🐍 from Bangladesh 🇧🇩.</p>
+            <img src="programmer.png" height="100" width="100" alt="Shomi Khan">
+        </span>
+        <p>
+            Love to build cool 🤘 tech stuffs and have a huge interest in diving deep into <span class="highlighted-text">low-level systems</span> 🛠️🔢.</p>
+        <p>
+            Always up for a chat 💬 or exploring new ideas ✨, so hit me up
+            anytime! 😊
+        </p>
 
         <div class="social-links">
             <a href="https://github.com/nahK994" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/256/3291/3291667.png" alt="GitHub" width="40" height="40">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
             </a>
             <a href="https://linkedin.com/in/shomi-khan-64b418118" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/256/3536/3536505.png" alt="LinkedIn" width="40"
-                    height="40">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
             </a>
             <a href="https://www.facebook.com/shomi.khan1/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/256/733/733547.png" alt="Facebook" width="40" height="40">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook">
             </a>
         </div>
     </div>
-
-    <script>
-        function showTab(tabId) {
-            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-            document.querySelectorAll('.code-content').forEach(content => content.classList.remove('active'));
-
-            document.getElementById(tabId).classList.add('active');
-            document.querySelector(`.tab[onclick="showTab('${tabId}')"]`).classList.add('active');
-        }
-    </script>
 </body>
 
 </html>
