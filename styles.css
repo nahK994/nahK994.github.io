@@ -9,29 +9,6 @@ body {
     overflow: hidden;
 }
 
-.blast-container {
-    width: 1em;
-}
-
-.blast {
-    width: 18px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
-    animation: blastA 1s infinite;
-}
-
-@keyframes blastA {
-    0% {
-        font-size: 0em;
-    }
-
-    100% {
-        font-size: 1em;
-    }
-}
-
 .card {
     border: 2px dashed #ff6f61;
     background-color: white;
@@ -67,7 +44,7 @@ body {
     column-gap: 12px;
     margin-top: 8px;
     margin-bottom: 12px;
-    
+
     .text {
         color: #ff6f61;
         text-shadow: 0 0 10px #fff, 0 0 1px #fff, 0 0 2px #ecb3ad, 0 0 2px #ecb3ad, 0 0 12px #ecb3ad, 0 0 2px #ecb3ad, 0 0 2px #ecb3ad;
@@ -112,11 +89,6 @@ body {
     margin: 0 0 15px;
 }
 
-.highlighted-text {
-    color: #ff6f61;
-    text-shadow: 0 0 10px #fff, 0 0 1px #fff, 0 0 1px #ecb3ad, 0 0 1px #ecb3ad, 0 0 12px #ecb3ad, 0 0 1px #ecb3ad, 0 0 1px #ecb3ad;
-}
-
 .social-links {
     display: flex;
     justify-content: center;
@@ -158,16 +130,6 @@ body {
         font-size: 14px;
     }
 
-    .blast-container {
-        width: 14px;
-        height: 14px;
-    }
-
-    .blast {
-        width: 14px;
-        height: 14px;
-    }
-
     .social-links img {
         width: 30px;
         height: 30px;
@@ -205,16 +167,6 @@ body {
         font-size: 16px;
     }
 
-    .blast-container {
-        width: 16px;
-        height: 16px;
-    }
-
-    .blast {
-        width: 16px;
-        height: 16px;
-    }
-
     .social-links img {
         width: 30px;
         height: 30px;
@@ -242,16 +194,6 @@ body {
 
     .card p {
         font-size: 18px;
-    }
-
-    .blast-container {
-        width: 18px;
-        height: 18px;
-    }
-
-    .blast {
-        width: 18px;
-        height: 18px;
     }
 
     .social-links img {
@@ -282,16 +224,6 @@ body {
 
     .card p {
         font-size: 22px;
-    }
-
-    .blast-container {
-        width: 22px;
-        height: 22px;
-    }
-
-    .blast {
-        width: 22px;
-        height: 22px;
     }
 
     .social-links img {
