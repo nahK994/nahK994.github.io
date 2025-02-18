@@ -172,7 +172,7 @@ body {
 /* Media queries for desktop screens */
 @media (min-width: 768px) and (max-width: 1999px) {
     .card {
-        max-width: 380px;
+        max-width: 400px;
         h2 {
             font-size: 26px;
         }
@@ -186,9 +186,16 @@ body {
         height: 30px;
     }
 
-    .intro img {
-        width: 100px;
-        height: 100px;
+    .intro {
+        p{
+            width: 70%;
+            padding-right: 12px;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
     }
 }
 
