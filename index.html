@@ -6,40 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="programmer.png" type="image/png">
     <title>SKhan (ツ)</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="card">
-        <h2>
-            <span class="emoji">
-                <span class="wave-emoji">👋</span>
-                <span class="face-emoji">🤓</span>
-            </span>
-            <span class="text">Hey there!!</span>🎉
+<body class="flex justify-center items-center h-screen bg-gradient-to-br from-yellow-100 to-green-100 font-mono">
+    <div
+        class="bg-white border-2 border-dashed border-red-400 rounded-2xl shadow-lg py-8 px-5 max-w-sm text-center opacity-0 animate-fadeIn">
+        <h2 class="font-bold flex justify-center items-center mb-4 text-2xl">
+            <span class="animate-wave">👋</span>
+            <span class="mb-2 mr-4">🤓</span>
+            <span class="text-red-400 drop-shadow-2xl mr-2">Hey there!!</span>
+            <span>🎉</span>
         </h2>
-        <span class="intro">
-            <p>I'm Shomi Khan, a backend software engineer 🦫🖥️🐍 from Bangladesh 🇧🇩.</p>
-            <img src="programmer.png" height="100" width="100" alt="Shomi Khan">
-        </span>
-        <p>
-            Apart from coding, I’m an anime fan, former cyclist 🚴, and hobbyist photographer 📸.
-        </p>
-        <p>
-            I love to chat 🗨️ rather than talk. If you ping me with a ‘hi’, I'll be happy to chat with you more! 😊
-        </p>
-        <div class="social-links">
+        <div class="flex flex-col sm:flex-row justify-center items-center mb-4 gap-x-4">
+            <p class="text-gray-800 text-lg">I'm Shomi Khan, a backend software engineer 🦫🖥️🐍 from
+                Bangladesh 🇧🇩.</p>
+            <img src="programmer.png" alt="Shomi Khan" class="w-20 h-20 sm:w-24 sm:h-24 mt-4 sm:mt-0">
+        </div>
+        <p class="pr-3 text-gray-800 mb-4 text-lg">Apart from coding, I’m an anime fan, former cyclist 🚴, and hobbyist
+            photographer 📸.</p>
+        <p class="text-gray-800 text-lg">I love to chat 🗨️ rather than talk. If you ping me with a ‘hi’, I'll be happy
+            to chat with you more! 😊</p>
+        <div class="flex justify-center gap-5 mt-5">
             <a href="https://github.com/nahK994" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="w-8 h-8">
             </a>
-            <a href="https://linkedin.com/in/shomi-khan-64b418118" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            <a href="https://linkedin.com/in/shomikhan" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-8 h-8">
             </a>
-            <a href="https://www.facebook.com/shomi.khan1/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook">
+            <a href="https://www.facebook.com/shomi.khan1" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook" class="w-8 h-8">
             </a>
         </div>
     </div>
+
+    <style>
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(120px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 3s forwards;
+        }
+
+        @keyframes wave {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(45deg);
+            }
+        }
+
+        .animate-wave {
+            animation: wave 1s infinite;
+        }
+    </style>
 </body>
 
 </html>
