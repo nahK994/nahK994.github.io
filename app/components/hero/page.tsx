@@ -8,8 +8,8 @@ export default function Hero() {
             Software Engineer | Golang Alchemist 🦫 | Python Charmer 🐍 | Passionate about Cloud-Native Development
         </p>
         <a
-            href="#projects"
-            className="bg-white text-green-500 px-6 py-3 rounded-2xl text-lg font-semibold transition-transform transform hover:scale-105 hover:shadow-lg"
+            href="https://github.com/nahK994" target="_blank"
+            className="bg-yellow-50 text-green-500 px-6 py-3 rounded-2xl text-lg font-semibold transition-transform transform hover:scale-105 hover:shadow-lg"
         >
             View My Work
         </a>
