@@ -11,10 +11,11 @@ import {
 } from "react-icons/fa";
 
 const navItems = [
-    { id: "hero", label: "Home", icon: <FaHome /> },
-    { id: "about", label: "About", icon: <FaInfoCircle /> },
-    { id: "skills", label: "Skills", icon: <FaLaptopCode /> },
-    { id: "projects", label: "Projects", icon: <FaProjectDiagram /> },
+    { id: "hero", label: "Home", icon: "🏠" },
+    { id: "about", label: "About", icon: "🙋‍♂️" },
+    { id: "skills", label: "Skills", icon: "🧩" },
+    { id: "projects", label: "Projects", icon: "💡" },
+    { id: "blogs", label: "Bolgs", icon: "✍️" },
 ];
 
 const Sidebar = () => {
