@@ -29,3 +29,7 @@
 .animate-wave {
   animation: wave 1s infinite;
 }
+
+html {
+  scroll-behavior: smooth;
+}

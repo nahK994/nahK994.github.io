@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function About() {
-    return <div className="flex justify-center items-center h-screen bg-gradient-to-br from-yellow-100 to-green-100 font-mono px-3">
+    return <section id="about" className="flex justify-center items-center h-screen bg-gradient-to-br from-yellow-100 to-green-100 font-mono px-3">
         <div
             className="bg-white border-2 border-dashed border-red-400 rounded-2xl shadow-lg py-8 px-2 sm:px-5 max-w-sm text-center opacity-0 animate-fadeIn">
             <h2 className="font-bold flex justify-center items-center mb-4 text-2xl">
@@ -31,5 +31,5 @@ export default function About() {
                 </a>
             </div>
         </div>
-    </div>
+    </section>
 }
