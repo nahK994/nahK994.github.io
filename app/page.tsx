@@ -8,8 +8,8 @@ export default function Home() {
     <div className="flex flex-col">
         <Sidebar />
         <Hero />
-        {/* <AboutOld /> */}
-        <About />
+        <AboutOld />
+        {/* <About /> */}
     </div>
   );
 }

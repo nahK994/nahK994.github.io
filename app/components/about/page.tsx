@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function About() {
-    return <section id="about" className="min-h-screen flex flex-col items-center justify-center text-center p-8 bg-gray-100">
+    return <section id="about" className="min-h-screen flex flex-col items-center justify-center text-center p-8 bg-gradient-to-b to-green-50 from-yellow-50 text-gray-900">
     <h1 className="text-4xl font-bold text-green-600 mb-4">About Me 🍀</h1>
     <p className="text-lg max-w-2xl mb-8">
       Hey there! I’m Shomi Khan — a curious soul from Bangladesh 🇧🇩 who loves learning and building tech from the ground up. 🛠️ 
