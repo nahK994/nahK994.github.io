@@ -2,10 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import {
-    FaHome,
-    FaInfoCircle,
-    FaLaptopCode,
-    FaProjectDiagram,
     FaAngleRight,
     FaAngleDown,
 } from "react-icons/fa";
