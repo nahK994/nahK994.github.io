@@ -20,6 +20,11 @@ const Sidebar = () => {
     const [hideTimeout, setHideTimeout] = useState<NodeJS.Timeout | null>(null);
     const [debounceTimeout, setDebounceTimeout] = useState<NodeJS.Timeout | null>(null);
 
+    const resetHideTimeout = () => {
+        if (hideTimeout) clearTimeout(hideTimeout);
+        setHideTimeout(setTimeout(() => setIsVisible(false), 2000));
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             setIsVisible(true);
@@ -55,7 +60,7 @@ const Sidebar = () => {
             if (hideTimeout) clearTimeout(hideTimeout);
             if (debounceTimeout) clearTimeout(debounceTimeout);
         };
-    }, [hideTimeout, debounceTimeout]);
+    }, [hideTimeout, debounceTimeout, resetHideTimeout]);
 
     const handleClick = () => {
         resetHideTimeout();
@@ -64,11 +69,6 @@ const Sidebar = () => {
     const toggleSidebar = () => {
         setIsVisible(!isVisible);
         resetHideTimeout();
-    };
-
-    const resetHideTimeout = () => {
-        if (hideTimeout) clearTimeout(hideTimeout);
-        setHideTimeout(setTimeout(() => setIsVisible(false), 2000));
     };
 
     const SidebarContent = ({ isVertical }: { isVertical: boolean }) => (
