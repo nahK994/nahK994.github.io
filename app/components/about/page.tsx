@@ -11,13 +11,13 @@ export default function About() {
                 <span>🎉</span>
             </h2>
             <div className="flex flex-col sm:flex-row justify-center items-center mb-4 gap-x-4">
-                <p className="text-gray-800 text-lg">I'm Shomi Khan, a backend software engineer 🦫🖥️🐍 from
+                <p className="text-gray-800 text-lg">I&rsquo;m Shomi Khan, a backend software engineer 🦫🖥️🐍 from
                     Bangladesh 🇧🇩.</p>
                 <Image src="/programmer.png" alt="Shomi Khan" width={96} height={96} className="w-20 h-20 sm:w-24 sm:h-24 mt-4 sm:mt-0" />
             </div>
             <p className="pr-3 text-gray-800 mb-4 text-lg">Apart from coding, I’m an anime fan, former cyclist 🚴, and hobbyist
                 photographer 📸.</p>
-            <p className="text-gray-800 text-lg">I love to chat 🗨️ rather than talk. If you ping me with a ‘hi’, I'll be happy
+            <p className="text-gray-800 text-lg">I love to chat 🗨️ rather than talk. If you ping me with a &lsquo;hi&rsquo;, I&rsquo;ll be happy
                 to chat with you more! 😊</p>
             <div className="flex justify-center gap-5 mt-5">
                 <a href="https://github.com/nahK994" target="_blank">
