@@ -1,10 +1,10 @@
 export default function Hero() {
-    return <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-yellow-50 text-gray-900">
-    <div className="text-center">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in-down">
+    return <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-yellow-50">
+    <div className="text-center flex flex-col items-center">
+        <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in-down text-gray-700">
             Hi, I’m Shomi Khan
         </h1>
-        <p className="text-lg md:text-2xl mb-8 animate-fade-in-up">
+        <p className="text-lg md:text-2xl mb-8 animate-fade-in-up text-gray-800">
             Software Engineer | Golang Alchemist 🦫 | Python Charmer 🐍 | Passionate about Cloud-Native Development
         </p>
         <a
