@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 
 const navItems = [
-    { id: "hero", label: "Home", icon: "🏠" },
+    { id: "", label: "Home", icon: "🏠" },
     { id: "about", label: "About", icon: "🙋‍♂️" },
     { id: "skills", label: "Skills", icon: "🧩" },
     { id: "projects", label: "Projects", icon: "💡" },
@@ -15,7 +15,7 @@ const navItems = [
 ];
 
 const Sidebar = () => {
-    const [activeSection, setActiveSection] = useState("hero");
+    const [activeSection, setActiveSection] = useState(navItems[0].id);
     const [isVisible, setIsVisible] = useState(false);
     const [hideTimeout, setHideTimeout] = useState<NodeJS.Timeout | null>(null);
     const [debounceTimeout, setDebounceTimeout] = useState<NodeJS.Timeout | null>(null);
