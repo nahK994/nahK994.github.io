@@ -32,3 +32,90 @@ export const profile = {
         logoUrl: "https://cdn-icons-png.flaticon.com/512/174/174857.png"
     }
 }
+
+export const skill = {
+    language: [
+        {
+            name: "Python",
+            logo: "/python.png"
+        },
+        {
+            name: "Golang",
+            logo: "/golang.png"
+        },
+        {
+            name: "TypeScript",
+            logo: "/typescript.png"
+        },
+        {
+            name: "C++",
+            logo: "/c++.png"
+        },
+        {
+            name: "Bash",
+            logo: "/bash.png"
+        }
+    ],
+    framework: {
+        backend: [
+            {
+                name: "Gin",
+                logo: "/gin.png"
+            },
+            {
+                name: "Django",
+                logo: "/django.png"
+            },
+            {
+                name: "FastAPI",
+                logo: "/fastapi.png"
+            }
+        ],
+        frontend: [
+            {
+                name: "Nextjs",
+                logo: "/nextjs.png"
+            },
+            {
+                name: "Angular",
+                logo: "/angular.png"
+            }
+        ]
+    },
+    db: [
+        {
+            name: "PostgreSQL",
+            logo: "/postgresql.png"
+        }
+    ],
+    tools: [
+        {
+            name: "Docker",
+            logo: "/docker.png"
+        },
+        {
+            name: "TailwindCSS",
+            logo: "/tailwind-css.png"
+        },
+        {
+            name: "Linux",
+            logo: "/linux.png"
+        },
+        {
+            name: "AWS",
+            logo: "/aws.png"
+        },
+        {
+            name: "Redis",
+            logo: "/redis.png"
+        },
+        {
+            name: "Pydentic",
+            logo: "/pydentic.png"
+        },
+        {
+            name: "Kafka",
+            logo: "/kafka.png"
+        }
+    ]
+}
