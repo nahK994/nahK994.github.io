@@ -9,12 +9,20 @@ export default function Hero() {
             <p className="text-lg md:text-2xl mb-8 animate-fade-in-up text-gray-800">
                 {hero.subTitle}
             </p>
-            <a
-                href={profile.github.url} target="_blank"
-                className="bg-yellow-50 text-green-500 px-6 py-3 rounded-2xl text-lg font-semibold transition-transform transform hover:scale-105 hover:shadow-lg"
-            >
-                View My Work
-            </a>
+            <div className="flex flex-row justify-center items-center gap-4">
+                <a
+                    href={profile.github.url} target="_blank"
+                    className="bg-yellow-50 text-green-500 px-6 py-3 rounded-2xl text-lg font-semibold transition-transform transform hover:scale-105 hover:shadow-lg"
+                >
+                    View My Work
+                </a>
+                <a
+                    href="ShomiKhan_Resume.pdf" target="_blank"
+                    className="bg-yellow-50 text-green-500 px-6 py-3 rounded-2xl text-lg font-semibold transition-transform transform hover:scale-105 hover:shadow-lg"
+                >
+                    Resume
+                </a>
+            </div>
         </div>
     </section>
 
