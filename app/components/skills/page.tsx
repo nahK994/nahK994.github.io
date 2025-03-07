@@ -11,17 +11,12 @@ export default function Skills() {
                     ))}
                 </div>
                 <div className="flex flex-row justify-center items-center gap-8">
-                    {Object.values(skill.framework.backend).map((s) => (
+                    {Object.values(skill.backend).map((s) => (
                         <SkillItem key={s.name} logo={s.logo} name={s.name} />
                     ))}
                 </div>
                 <div className="flex flex-row justify-center items-center gap-8">
-                    {Object.values(skill.framework.frontend).map((s) => (
-                        <SkillItem key={s.name} logo={s.logo} name={s.name} />
-                    ))}
-                </div>
-                <div className="flex flex-row justify-center items-center gap-8">
-                    {Object.values(skill.db).map((s) => (
+                    {Object.values(skill.frontend).map((s) => (
                         <SkillItem key={s.name} logo={s.logo} name={s.name} />
                     ))}
                 </div>

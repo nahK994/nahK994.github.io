@@ -56,46 +56,46 @@ export const skill = {
             logo: "/bash.png"
         }
     ],
-    framework: {
-        backend: [
-            {
-                name: "Gin",
-                logo: "/gin.png"
-            },
-            {
-                name: "Django",
-                logo: "/django.png"
-            },
-            {
-                name: "FastAPI",
-                logo: "/fastapi.png"
-            }
-        ],
-        frontend: [
-            {
-                name: "Nextjs",
-                logo: "/nextjs.png"
-            },
-            {
-                name: "Angular",
-                logo: "/angular.png"
-            }
-        ]
-    },
-    db: [
+    backend: [
+        {
+            name: "Gin",
+            logo: "/gin.png"
+        },
+        {
+            name: "Django",
+            logo: "/django.png"
+        },
+        {
+            name: "FastAPI",
+            logo: "/fastapi.png"
+        },
         {
             name: "PostgreSQL",
             logo: "/postgresql.png"
+        }
+    ],
+    frontend: [
+        {
+            name: "Nextjs",
+            logo: "/nextjs.png"
+        },
+        {
+            name: "Angular",
+            logo: "/angular.png"
+        },
+        {
+            name: "TailwindCSS",
+            logo: "/tailwind-css.png"
+        },
+        {
+            name: "HTML",
+            logo: "/html.png"
         }
     ],
     tools: [
         {
             name: "Docker",
             logo: "/docker.png"
-        },
-        {
-            name: "TailwindCSS",
-            logo: "/tailwind-css.png"
         },
         {
             name: "Linux",
@@ -116,6 +116,10 @@ export const skill = {
         {
             name: "Kafka",
             logo: "/kafka.png"
+        },
+        {
+            name: "Git",
+            logo: "/git.png"
         }
     ]
 }
