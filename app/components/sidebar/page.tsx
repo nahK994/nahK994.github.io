@@ -5,14 +5,7 @@ import {
     FaAngleRight,
     FaAngleDown,
 } from "react-icons/fa";
-
-const navItems = [
-    { id: "", label: "Home", icon: "🏠" },
-    { id: "about", label: "About", icon: "🙋‍♂️" },
-    { id: "skills", label: "Skills", icon: "🧩" },
-    { id: "projects", label: "Projects", icon: "💡" },
-    { id: "blogs", label: "Bolgs", icon: "✍️" },
-];
+import { navItems } from "../../utils/constants";
 
 const Sidebar = () => {
     const [activeSection, setActiveSection] = useState(navItems[0].id);
