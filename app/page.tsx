@@ -1,4 +1,5 @@
 import About from "./components/about/page";
+import Experiences from "./components/experiences/page";
 import Hero from "./components/hero/page";
 import Sidebar from "./components/sidebar/page";
 import Skills from "./components/skills/page";
@@ -10,6 +11,7 @@ export default function Home() {
         <Hero />
         <About />
         <Skills />
+        <Experiences/>
     </div>
   );
 }

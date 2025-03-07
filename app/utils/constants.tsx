@@ -2,8 +2,8 @@ export const navItems = [
     { id: "", label: "Home", icon: "🏠" },
     { id: "about", label: "About", icon: "🙋‍♂️" },
     { id: "skills", label: "Skills", icon: "🧩" },
-    { id: "projects", label: "Projects", icon: "💡" },
-    { id: "blogs", label: "Bolgs", icon: "✍️" },
+    { id: "experiences", label: "Experiences", icon: "💡" },
+    // { id: "blogs", label: "Bolgs", icon: "✍️" },
 ];
 
 export const hero = {
@@ -123,3 +123,48 @@ export const skill = {
         }
     ]
 }
+
+export const experiences = [
+    {
+        company: "GroupyFy Inc.",
+        role: "Backend Software Engineer",
+        period: "Nov 2023 - Present",
+        responsibilities: [
+            "Created and managed RESTful APIs",
+            "Designed and optimized database queries",
+            "Managed asynchronous tasks and created cron jobs",
+            "Integrated Stripe payment method",
+            "Collaborated with frontend team",
+            "Set up development environments",
+            "Deployed on AWS"
+        ]
+    },
+    {
+        company: "Hubar Tech Limited",
+        role: "Software Engineer",
+        period: "Feb 2023 - May 2023",
+        responsibilities: [
+            "Created and documented RESTful APIs",
+            "Improved API performence",
+        ]
+    },
+    {
+        company: "SELISE Digital Platforms",
+        role: "Jr. Software Engineer",
+        period: "Apr 2020 - Dec 2022",
+        responsibilities: [
+            "Migrating full project from Python3 to Python3",
+            "Developing Enterprise frontend web app",
+            "Making different shared modules so that these can adapt business requirements easily and increase reusability"
+        ]
+    },
+    {
+        company: "Samsung R&D Institute Bangladesh (SRBD)",
+        role: "Intern",
+        period: "Aug 2018 - Jan 2019",
+        responsibilities: [
+            "Developing existing application by identifying areas for modification",
+            "Learning and builting basic Tizen application"
+        ]
+    }
+];
