@@ -115,11 +115,11 @@ export const skill = {
         },
         {
             name: "Kafka",
-            logo: "/kafka.png"
+            logo: "kafka.png"
         },
         {
             name: "Git",
-            logo: "../../../public/git.png"
+            logo: "https://nahk994.github.io/portfolio/git.png"
         }
     ]
 }
