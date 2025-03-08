@@ -119,7 +119,7 @@ export const skill = {
         },
         {
             name: "Git",
-            logo: "/public/git.png"
+            logo: "../../../public/git.png"
         }
     ]
 }
