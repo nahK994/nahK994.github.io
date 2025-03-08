@@ -135,7 +135,7 @@ export const experiences = [
         responsibilities: [
             "Created and managed RESTful APIs",
             "Designed and optimized database queries",
-            "Managed asynchronous tasks and created cron jobs",
+            "Managed asynchronous tasks and cron jobs",
             "Integrated Stripe payment method",
             "Collaborated with frontend team",
             "Set up development environments",
@@ -156,9 +156,9 @@ export const experiences = [
         role: "Jr. Software Engineer",
         period: "Apr 2020 - Dec 2022",
         responsibilities: [
-            "Migrating full project from Python3 to Python3",
-            "Developing Enterprise frontend web app",
-            "Making different shared modules so that these can adapt business requirements easily and increase reusability"
+            "Migrated full project from Python2 to Python3",
+            "Developed Enterprise frontend web app",
+            "Made different shared modules so that these can adapt business requirements easily and increase reusability"
         ]
     },
     {
@@ -166,8 +166,8 @@ export const experiences = [
         role: "Intern",
         period: "Aug 2018 - Jan 2019",
         responsibilities: [
-            "Developing existing application by identifying areas for modification",
-            "Learning and builting basic Tizen application"
+            "Developed existing application by identifying areas for modification",
+            "Learnt and built basic Tizen application"
         ]
     }
 ];
