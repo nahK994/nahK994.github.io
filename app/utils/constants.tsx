@@ -1,9 +1,11 @@
+const isDev = process.env.NODE_ENV === 'development';
+
 export const navItems = [
     { id: "", label: "Home", icon: "🏠" },
     { id: "about", label: "About", icon: "🙋‍♂️" },
     { id: "skills", label: "Skills", icon: "🧩" },
     { id: "experiences", label: "Experiences", icon: "💡" },
-    // { id: "blogs", label: "Bolgs", icon: "✍️" },
+    { id: "contact-me", label: "Contact", icon: "☎️" },
 ];
 
 export const hero = {
@@ -21,19 +23,21 @@ export const aboutMe = {
 export const profile = {
     github: {
         url: "https://github.com/nahK994",
-        logoUrl: "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+        logoUrl: `${isDev ? '/' : ''}github.png`
     },
     facebook: {
         url: "https://www.facebook.com/shomi.khan1",
-        logoUrl: "https://cdn-icons-png.flaticon.com/512/174/174848.png"
+        logoUrl: `${isDev ? '/' : ''}facebook.png`
     },
     linkedin: {
         url: "https://linkedin.com/in/shomikhan",
-        logoUrl: "https://cdn-icons-png.flaticon.com/512/174/174857.png"
+        logoUrl: `${isDev ? '/' : ''}linkedin.png`
+    },
+    gmail: {
+        url: "shomikhan043@gmail.com",
+        logoUrl: `${isDev ? '/' : ''}gmail.png`
     }
 }
-
-const isDev = process.env.NODE_ENV === 'development';
 
 export const skill = {
     language: [
