@@ -33,96 +33,99 @@ export const profile = {
     }
 }
 
+const isDev = process.env.NODE_ENV === 'development';
+
 export const skill = {
     language: [
         {
             name: "Python",
-            logo: "/python.png"
+            logo: `${isDev ? '/' : ''}python.png`
         },
         {
             name: "Golang",
-            logo: "/golang.png"
+            logo: `${isDev ? '/' : ''}golang.png`
         },
         {
             name: "TypeScript",
-            logo: "/typescript.png"
+            logo: `${isDev ? '/' : ''}typescript.png`
         },
         {
             name: "C++",
-            logo: "/c++.png"
+            logo: `${isDev ? '/' : ''}c++.png`
         },
         {
             name: "Bash",
-            logo: "/bash.png"
+            logo: `${isDev ? '/' : ''}bash.png`
         }
     ],
     backend: [
         {
             name: "Gin",
-            logo: "/gin.png"
+            logo: `${isDev ? '/' : ''}gin.png`
         },
         {
             name: "Django",
-            logo: "/django.png"
+            logo: `${isDev ? '/' : ''}django.png`
         },
         {
             name: "FastAPI",
-            logo: "/fastapi.png"
+            logo: `${isDev ? '/' : ''}fastapi.png`
         },
         {
             name: "PostgreSQL",
-            logo: "/postgresql.png"
+            logo: `${isDev ? '/' : ''}postgresql.png`
         }
     ],
     frontend: [
         {
             name: "Nextjs",
-            logo: "/nextjs.png"
+            logo: `${isDev ? '/' : ''}nextjs.png`
         },
         {
             name: "Angular",
-            logo: "/angular.png"
+            logo: `${isDev ? '/' : ''}angular.png`
         },
         {
             name: "TailwindCSS",
-            logo: "/tailwind-css.png"
+            logo: `${isDev ? '/' : ''}tailwind-css.png`
         },
         {
             name: "HTML",
-            logo: "/html.png"
+            logo: `${isDev ? '/' : ''}html.png`
         }
     ],
     tools: [
         {
             name: "Docker",
-            logo: "/docker.png"
+            logo: `${isDev ? '/' : ''}docker.png`
         },
         {
             name: "Linux",
-            logo: "/linux.png"
+            logo: `${isDev ? '/' : ''}linux.png`
         },
         {
             name: "AWS",
-            logo: "/aws.png"
+            logo: `${isDev ? '/' : ''}aws.png`
         },
         {
             name: "Redis",
-            logo: "/redis.png"
+            logo: `${isDev ? '/' : ''}redis.png`
         },
         {
             name: "Pydentic",
-            logo: "/pydentic.png"
+            logo: `${isDev ? '/' : ''}pydentic.png`
         },
         {
             name: "Kafka",
-            logo: "kafka.png"
+            logo: `${isDev ? '/' : ''}kafka.png`
         },
         {
             name: "Git",
-            logo: "https://nahk994.github.io/portfolio/git.png"
+            logo: `${isDev ? '/' : ''}git.png`
         }
     ]
-}
+};
+
 
 export const experiences = [
     {
