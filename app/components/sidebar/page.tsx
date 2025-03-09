@@ -89,7 +89,7 @@ const Sidebar = () => {
         <>
             {/* Desktop Sidebar */}
             <div
-                className={`hidden md:block fixed top-1/2 left-0 transform -translate-y-1/2 ${isVisible ? 'w-fit p-4' : 'w-10'}
+                className={`hidden md:block fixed top-1/2 left-0 transform -translate-y-1/2 z-1000 ${isVisible ? 'w-fit p-4' : 'w-10'}
                 rounded-r-2xl p-2 shadow-lg transition-all duration-100 ease-in-out bg-white`}
             >
                 <div className="cursor-pointer text-2xl" onClick={toggleSidebar}>
@@ -100,7 +100,7 @@ const Sidebar = () => {
 
             {/* Mobile Sidebar */}
             <div
-                className={`md:hidden block fixed top left-1/2 transform -translate-x-1/2 ${isVisible ? 'w-fit p-4' : 'w-10'}
+                className={`md:hidden block fixed top left-1/2 transform -translate-x-1/2 z-1000 ${isVisible ? 'w-fit p-4' : 'w-10'}
                 rounded-b-2xl p-2 shadow-lg transition-all duration-100 ease-in-out bg-white`}
             >
                 <div className="cursor-pointer text-2xl" onClick={toggleSidebar}>
