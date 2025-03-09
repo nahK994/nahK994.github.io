@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 const ContactMe = () => {
     return (
-        <section id={navItems[4].id} className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-yellow-50">
-            <div className="bg-white border-2 border-dashed border-red-400 rounded-2xl shadow-lg py-8 px-2 sm:px-5 max-w-lg text-center">
+        <section id={navItems[4].id} className="flex justify-center items-center h-screen font-mono px-3 bg-gradient-to-b from-green-50 to-yellow-50">
+            <div className="bg-white border-2 border-dashed border-red-400 rounded-2xl shadow-lg py-8 px-2 sm:px-12 max-w-lg text-center">
                 <p className="text-gray-800 text-lg">{aboutMe.welcome}</p>
                 <div className="flex flex-col space-y-4">
                     <div className="flex justify-center gap-5 mt-5">
