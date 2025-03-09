@@ -36,6 +36,10 @@ export const profile = {
     gmail: {
         url: "shomikhan043@gmail.com",
         logoUrl: `${isDev ? '/' : ''}gmail.png`
+    },
+    whatsapp: {
+        number: "+8801676498001",
+        logoUrl: `${isDev ? '/' : ''}whatsapp.png`
     }
 }
 

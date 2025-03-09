@@ -8,17 +8,17 @@ const ContactMe = () => {
                 <p className="text-gray-800 text-lg">{aboutMe.welcome}</p>
                 <div className="flex flex-col space-y-4">
                     <div className="flex justify-center gap-5 mt-5">
-                        <a href={profile.github.url} target="_blank">
-                            <Image src={profile.github.logoUrl} alt="GitHub" width={50} height={50} className="w-20 h-20" />
-                        </a>
                         <a href={profile.linkedin.url} target="_blank">
-                            <Image src={profile.linkedin.logoUrl} alt="LinkedIn" width={50} height={50} className="w-20 h-20" />
+                            <Image src={profile.linkedin.logoUrl} alt="LinkedIn" width={100} height={100} className="w-16 h-16" />
                         </a>
                         <a href={profile.facebook.url} target="_blank">
-                            <Image src={profile.facebook.logoUrl} alt="Facebook" width={50} height={50} className="w-20 h-20" />
+                            <Image src={profile.facebook.logoUrl} alt="Facebook" width={100} height={100} className="w-16 h-16" />
                         </a>
                         <a href={`mailto:${profile.gmail.url}`}>
-                            <Image src={profile.gmail.logoUrl} alt="Gmail" width={50} height={50} className="w-20 h-20" />
+                            <Image src={profile.gmail.logoUrl} alt="Gmail" width={100} height={100} className="w-16 h-16" />
+                        </a>
+                        <a href={`https://wa.me/${profile.whatsapp.number}`} target="_blank">
+                            <Image src={profile.whatsapp.logoUrl} alt="WhatsApp" width={100} height={100} className="w-16 h-16" />
                         </a>
                     </div>
                 </div>
