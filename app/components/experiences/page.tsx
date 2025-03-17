@@ -7,7 +7,7 @@ export default function Experiences() {
             <div className="bg-white border-2 border-dashed border-red-400 rounded-2xl shadow-lg py-8 px-4 max-w-fit">
                 {experiences.map((exp, index) => (
                     <div key={index} className={`w-[80%] sm:w-150 -left-2 relative ml-6 ${index === experiences.length - 1 ? 'border-l-0 mb-0' : 'pb-8 border-yellow-100 border-l-2'}`}>
-                        <div className="absolute w-3 h-3 bg-green-300 rounded-full -left-1.5"></div>
+                        <div className="absolute w-fit h-fit rounded-full -left-3.5 text-2xl">💡</div>
                         <div className="ml-6">
                             <h3 className="text-xl font-semibold text-green-800">{exp.role}</h3>
                             <p className="text-lg text-green-700"><span className="text-blue-700">{exp.company}</span> | {exp.period}</p>
