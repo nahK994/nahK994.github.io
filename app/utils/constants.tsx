@@ -166,7 +166,7 @@ export const experiences = [
         responsibilities: [
             "Migrated full project from Python2 to Python3",
             "Developed Enterprise frontend web app",
-            "Made different shared modules so that these can adapt business requirements easily and increase reusability"
+            "Created shared UI modules for flexibility and reusability"
         ]
     },
     {
