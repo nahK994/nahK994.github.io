@@ -141,13 +141,14 @@ export const experiences = [
         role: "Backend Software Engineer",
         period: "Nov 2023 - Present",
         responsibilities: [
-            "Created and managed RESTful APIs",
-            "Designed and optimized database queries",
+            "Developed and maintained RESTful APIs with Django",
+            "Designed database schemas and managed cached data",
             "Managed asynchronous tasks and cron jobs",
-            "Integrated Stripe payment method",
-            "Collaborated with frontend team",
+            "Integrated payment systems (Stripe)",
+            "Migrated frontend from React to Nextjs",
+            "Collaborated with frontend dev to ensure seamless functionality",
             "Set up development environments",
-            "Deployed on AWS"
+            "Deployed the application on AWS"
         ]
     },
     {
@@ -155,8 +156,8 @@ export const experiences = [
         role: "Software Engineer",
         period: "Feb 2023 - May 2023",
         responsibilities: [
-            "Created and documented RESTful APIs",
-            "Improved API performence",
+            "Created RESTful APIs",
+            "Made swagger API documentation",
         ]
     },
     {
@@ -164,9 +165,11 @@ export const experiences = [
         role: "Jr. Software Engineer",
         period: "Apr 2020 - Dec 2022",
         responsibilities: [
+            "Developed Enterprise frontend web app with Angular",
+            "Created shared UI modules for flexibility and reusability",
+            "Trained and gave necessary guidelines to junior teammates",
             "Migrated full project from Python2 to Python3",
-            "Developed Enterprise frontend web app",
-            "Created shared UI modules for flexibility and reusability"
+            "Developed and maintailed RESTful APIs with Django"
         ]
     },
     {
@@ -174,7 +177,6 @@ export const experiences = [
         role: "Intern",
         period: "Aug 2018 - Jan 2019",
         responsibilities: [
-            "Developed existing application by identifying areas for modification",
             "Learnt and built basic Tizen application"
         ]
     }
