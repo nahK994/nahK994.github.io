@@ -2,7 +2,7 @@ import { hero, navItems, profile } from "../../utils/constants";
 
 export default function Hero() {
     return <section id={navItems[0].id} className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-yellow-50">
-        <div className="text-center flex flex-col items-center animate-fadeIn fadeIn">
+        <div className="text-center flex flex-col items-center animate-fadeIn fadeIn px-4 sm:px-0">
             <h1 className="text-3xl md:text-5xl font-bold mb-4 text-gray-700">
                 {hero.title}
             </h1>
