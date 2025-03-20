@@ -1,3 +1,5 @@
+import { AboutMeInfo } from "./types";
+
 const isDev = process.env.NODE_ENV === 'development';
 
 export const navItems = [
@@ -13,7 +15,7 @@ export const hero = {
     subTitle: "Software Engineer | Curious Soul 🤔💭 | Python Charmer 🐍 | Golang Alchemist 🦫"
 }
 
-export const aboutMe = {
+export const aboutMe: AboutMeInfo = {
     myself: "I'm Shomi Khan, backend focused full-stack software engineer 🦫🖥️🐍 from Bangladesh 🇧🇩.",
     passion: "🌥️ Enthusiastic about building cloud-native solutions, 🧑‍💻 writing clean code, ⚙️ diving into low-level systems, 🤖 automating everything possible",
     hobby: "Apart from coding, I’m an anime fan ⛩️, former cyclist 🚴, and hobbyist photographer 📸",
