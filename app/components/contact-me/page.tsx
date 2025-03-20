@@ -1,13 +1,13 @@
-import { aboutMe, navItems, profile } from '../../utils/constants';
 import Image from 'next/image';
 import Card from '../card/page';
+import { Profile } from '../../utils/types';
 
-const ContactMe = () => {
+export default function ContactMe({ profile, welcome, sectionId }: { profile: Profile; welcome: string, sectionId: string }) {
     return (
-        <section id={navItems[4].id} className="flex justify-center items-center h-screen font-mono px-3 bg-gradient-to-b from-green-50 to-yellow-50">
+        <section id={sectionId} className="flex justify-center items-center h-screen font-mono px-3 bg-gradient-to-b from-green-50 to-yellow-50">
             <Card>
                 <div className=" py-8 px-2 sm:px-12 max-w-lg text-center">
-                    <p className="text-gray-800 text-lg">{aboutMe.welcome}</p>
+                    <p className="text-gray-800 text-lg">{welcome}</p>
                     <div className="flex flex-col space-y-4">
                         <div className="flex justify-center gap-5 mt-5">
                             <a href={profile.linkedin.url} target="_blank">
@@ -29,5 +29,3 @@ const ContactMe = () => {
         </section>
     );
 };
-
-export default ContactMe;

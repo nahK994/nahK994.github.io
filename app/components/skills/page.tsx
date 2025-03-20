@@ -1,9 +1,9 @@
-import { navItems, skill } from "../../utils/constants";
+import { SkillCategory } from "../../utils/types";
 import SkillItem from "./item/skill-item";
 
-export default function Skills() {
+export default function Skills({skill, sectionId}: {skill: SkillCategory; sectionId: string}) {
     return (
-        <section id={navItems[2].id} className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-yellow-50">
+        <section id={sectionId} className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-yellow-50">
             <div className="flex flex-col gap-8 px-12 py-20">
                 <div className="flex flex-row flex-wrap justify-center items-center gap-8">
                     {Object.values(skill.language).map((s) => (

@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { aboutMe, navItems } from "../../utils/constants";
 import Card from "../card/page";
+import { AboutMeInfo } from "../../utils/types";
 
-export default function About() {
-    return <section id={navItems[1].id} className="flex justify-center items-center h-screen font-mono px-3 bg-gradient-to-b to-green-50 from-yellow-50 text-gray-900">
+export default function About({ aboutMe, sectionId }: { aboutMe: AboutMeInfo, sectionId: string }) {
+    return <section id={sectionId} className="flex justify-center items-center h-screen font-mono px-3 bg-gradient-to-b to-green-50 from-yellow-50 text-gray-900">
         <Card>
             <div className="py-8 px-2 sm:px-5 max-w-lg text-center">
                 <h2 className="font-bold flex justify-center items-center mb-4 text-3xl">

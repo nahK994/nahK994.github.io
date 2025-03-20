@@ -1,10 +1,10 @@
 import React from "react";
-import { experiences, navItems } from "../../utils/constants";
 import Card from "../card/page";
+import { Experience } from "../../utils/types";
 
-export default function Experiences() {
+export default function Experiences({experiences, sectionId}: {experiences: Experience[]; sectionId: string}) {
     return (
-        <section id={navItems[3].id} className="flex justify-center items-center min-h-screen font-mono px-3 bg-gradient-to-b to-green-50 from-yellow-50 text-gray-900">
+        <section id={sectionId} className="flex justify-center items-center min-h-screen font-mono px-3 bg-gradient-to-b to-green-50 from-yellow-50 text-gray-900">
             <Card>
                 <div className="py-8 px-2 sm:px-4 max-w-fit">
                     {experiences.map((exp, index) => (
