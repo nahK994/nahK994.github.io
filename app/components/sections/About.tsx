@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Card } from "./ui/Card";
-import { AboutMeInfo } from "../utils/types";
+import { Card } from "../ui/Card";
+import { AboutMeInfo } from "../../../utils/types";
 
 export default function About(  {aboutMe, sectionId}: {aboutMe: AboutMeInfo; sectionId: string}  ) {
     return <section id={sectionId} className="flex justify-center items-center h-screen font-mono px-3 bg-gradient-to-b to-green-50 from-yellow-50 text-gray-900">

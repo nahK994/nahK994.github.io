@@ -1,5 +1,5 @@
-import { SkillCategory } from "../../utils/types";
-import SkillItem from "./item/skill-item";
+import { SkillCategory } from "../../../utils/types";
+import SkillItem from "../ui/SkillItem";
 
 export default function Skills({skill, sectionId}: {skill: SkillCategory; sectionId: string}) {
     return (

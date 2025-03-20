@@ -1,10 +1,10 @@
-import About from "./components/About";
-import ContactMe from "./components/ContactMe";
-import Experiences from "./components/Experiences";
-import Hero from "./components/Hero";
+import About from "./components/sections/About";
+import ContactMe from "./components/sections/ContactMe";
+import Experiences from "./components/sections/Experiences";
+import Hero from "./components/sections/Hero";
 import Sidebar from "./components/ui/Sidebar";
-import Skills from "./components/skills/Skills";
-import { aboutMe, experiences, hero, navItems, profile, skill } from "./utils/constants";
+import Skills from "./components/sections/Skills";
+import { aboutMe, experiences, hero, navItems, profile, skill } from "../utils/constants";
 
 export default function Home() {
   return (
