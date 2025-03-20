@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { Profile } from '../utils/types';
-import { Card } from './ui/Card';
+import { Profile } from '../../../utils/types';
+import { Card } from '../ui/Card';
 
 export default function ContactMe({ profile, welcome, sectionId }: { profile: Profile; welcome: string; sectionId: string }) {
     return (

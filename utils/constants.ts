@@ -1,8 +1,8 @@
-import { AboutMeInfo } from "./types";
+import { AboutMeInfo, Experience, HeroInfo, NavItem, Profile, SkillCategory, SocialProfile } from "./types";
 
 const isDev = process.env.NODE_ENV === 'development';
 
-export const navItems = [
+export const navItems: NavItem[] = [
     { id: "", label: "Home", icon: "🏠" },
     { id: "about", label: "About", icon: "🙋‍♂️" },
     { id: "skills", label: "Skills", icon: "🧩" },
@@ -10,7 +10,7 @@ export const navItems = [
     { id: "contact-me", label: "Contact", icon: "☎️" },
 ];
 
-export const hero = {
+export const hero: HeroInfo = {
     title: "Hi, I’m Shomi Khan",
     subTitle: "Software Engineer | Curious Soul 🤔💭 | Python Charmer 🐍 | Golang Alchemist 🦫"
 }
@@ -22,7 +22,7 @@ export const aboutMe: AboutMeInfo = {
     welcome: "I love to chat 🗨️ rather than talk. If you ping me with a 'hi', I'll be happy to chat with you more! 😊"
 }
 
-export const profile = {
+export const profile: Profile = {
     github: {
         url: "https://github.com/shomi-khan",
         logoUrl: `${isDev ? '/' : ''}github.png`
@@ -45,7 +45,7 @@ export const profile = {
     }
 }
 
-export const skill = {
+export const skill: SkillCategory = {
     language: [
         {
             name: "Python",
@@ -137,7 +137,7 @@ export const skill = {
 };
 
 
-export const experiences = [
+export const experiences: Experience[] = [
     {
         company: "GroupyFy Inc.",
         role: "Backend Software Engineer",
