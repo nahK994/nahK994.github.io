@@ -157,7 +157,6 @@ export const experiences = [
         period: "Feb 2023 - May 2023",
         responsibilities: [
             "Created RESTful APIs",
-            "Made swagger API documentation",
         ]
     },
     {
