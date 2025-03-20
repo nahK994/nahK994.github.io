@@ -22,7 +22,7 @@ export const aboutMe = {
 
 export const profile = {
     github: {
-        url: "https://github.com/nahK994",
+        url: "https://github.com/shomi-khan",
         logoUrl: `${isDev ? '/' : ''}github.png`
     },
     facebook: {
