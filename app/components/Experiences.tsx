@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../card/page";
-import { Experience } from "../../utils/types";
+import { Experience } from "../utils/types";
+import { Card } from "./ui/Card";
 
 export default function Experiences({experiences, sectionId}: {experiences: Experience[]; sectionId: string}) {
     return (

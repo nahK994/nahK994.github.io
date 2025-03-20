@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import Card from '../card/page';
-import { Profile } from '../../utils/types';
+import { Profile } from '../utils/types';
+import { Card } from './ui/Card';
 
-export default function ContactMe({ profile, welcome, sectionId }: { profile: Profile; welcome: string, sectionId: string }) {
+export default function ContactMe({ profile, welcome, sectionId }: { profile: Profile; welcome: string; sectionId: string }) {
     return (
         <section id={sectionId} className="flex justify-center items-center h-screen font-mono px-3 bg-gradient-to-b from-green-50 to-yellow-50">
             <Card>
