@@ -73,6 +73,11 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Update ShomiKhan_Resume.pdf
+        run: |
+          sudo apt update
+          sudo apt install wkhtmltopdf
+          wkhtmltopdf resume-kit/resume.html public/ShomiKhan_Resume.pdf
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
