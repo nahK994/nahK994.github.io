@@ -5,7 +5,7 @@ import {
     FaAngleRight,
     FaAngleDown,
 } from "react-icons/fa";
-import { navItems } from "../../../utils/constants";
+import { navItems } from "../../../utils/data";
 
 const Sidebar = () => {
     const [activeSection, setActiveSection] = useState(navItems[0].id);
