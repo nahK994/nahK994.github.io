@@ -15,7 +15,6 @@ export interface AboutMeInfo {
     myself: string;
     passion: string;
     hobby: string;
-    welcome: string;
 };
 
 // Social Profile Links
@@ -55,3 +54,7 @@ export interface Experience {
     period: string;
     responsibilities: string[];
 };
+
+export interface Welcome {
+    text: string;
+}

@@ -4,7 +4,7 @@ import Experiences from "./components/sections/Experiences";
 import Hero from "./components/sections/Hero";
 import Sidebar from "./components/ui/Sidebar";
 import Skills from "./components/sections/Skills";
-import { aboutMe, experiences, hero, navItems, profile, skill } from "../utils/data";
+import { aboutMe, experiences, hero, navItems, profile, skill, welcome } from "../utils/data";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         <About sectionId={navItems[1].id} aboutMe={aboutMe} />
         <Skills sectionId={navItems[2].id} skill={skill} />
         <Experiences sectionId={navItems[3].id} experiences={experiences} />
-        <ContactMe sectionId={navItems[4].id} profile={profile} welcome={aboutMe.welcome} />
+        <ContactMe sectionId={navItems[4].id} profile={profile} welcome={welcome.text} />
     </div>
   );
 }
