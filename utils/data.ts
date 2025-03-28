@@ -1,4 +1,5 @@
-import { AboutMeInfo, Experience, HeroInfo, NavItem, Profile, SkillCategory, SocialProfile } from "./types";
+import { text } from "stream/consumers";
+import { AboutMeInfo, Experience, HeroInfo, NavItem, Profile, SkillCategory, SocialProfile, Welcome } from "./types";
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -17,9 +18,8 @@ export const hero: HeroInfo = {
 
 export const aboutMe: AboutMeInfo = {
     myself: "I'm Shomi Khan, backend focused full-stack software engineer 🦫🖥️🐍 from Bangladesh 🇧🇩.",
-    passion: "🌥️ Enthusiastic about building cloud-native solutions, 🧑‍💻 writing clean code, ⚙️ diving into low-level systems, 🤖 automating everything possible",
+    passion: "🌥️ Enthusiastic about building cloud-native solutions, ⚙️ diving into low-level systems, 🤖 automating everything possible",
     hobby: "Apart from coding, I’m an anime fan ⛩️, former cyclist 🚴, and hobbyist photographer 📸",
-    welcome: "I love to chat 🗨️ rather than talk. If you ping me with a 'hi', I'll be happy to chat with you more! 😊"
 }
 
 export const profile: Profile = {
@@ -182,3 +182,7 @@ export const experiences: Experience[] = [
         ]
     }
 ];
+
+export const welcome: Welcome = {
+    text: "I love to chat 🗨️ rather than talk. If you ping me with a 'hi', I'll be happy to chat with you more! 😊"
+}
