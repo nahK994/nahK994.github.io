@@ -47,106 +47,61 @@ export const profile: Profile = {
 
 export const skill: SkillCategory = {
     language: {
-        label: "Programming Language",
+        label: "Programming Languages",
         items: [
-            {
-                name: "Python",
-                logo: `${isDev ? '/' : ''}python.png`
-            },
-            {
-                name: "Golang",
-                logo: `${isDev ? '/' : ''}golang.png`
-            },
-            {
-                name: "TypeScript",
-                logo: `${isDev ? '/' : ''}typescript.png`
-            },
-            {
-                name: "C++",
-                logo: `${isDev ? '/' : ''}c++.png`
-            },
-            {
-                name: "Bash",
-                logo: `${isDev ? '/' : ''}bash.png`
-            }
+            { name: "Python", logo: `${isDev ? '/' : ''}python.png` },
+            { name: "Golang", logo: `${isDev ? '/' : ''}golang.png` },
+            { name: "TypeScript", logo: `${isDev ? '/' : ''}typescript.png` },
+            { name: "C++", logo: `${isDev ? '/' : ''}c++.png` },
+            { name: "Bash", logo: `${isDev ? '/' : ''}bash.png` }
         ]
     },
     backend: {
         label: "Backend",
         items: [
-            {
-                name: "Gin",
-                logo: `${isDev ? '/' : ''}gin.png`
-            },
-            {
-                name: "Django",
-                logo: `${isDev ? '/' : ''}django.png`
-            },
-            {
-                name: "FastAPI",
-                logo: `${isDev ? '/' : ''}fastapi.png`
-            },
-            {
-                name: "PostgreSQL",
-                logo: `${isDev ? '/' : ''}postgresql.png`
-            }
+            { name: "Gin", logo: `${isDev ? '/' : ''}gin.png` },
+            { name: "Django", logo: `${isDev ? '/' : ''}django.png` },
+            { name: "FastAPI", logo: `${isDev ? '/' : ''}fastapi.png` },
+            { name: "PostgreSQL", logo: `${isDev ? '/' : ''}postgresql.png` },
+            { name: "Redis", logo: `${isDev ? '/' : ''}redis.png` }
         ]
     },
     frontend: {
         label: "Frontend",
         items: [
-            {
-                name: "Nextjs",
-                logo: `${isDev ? '/' : ''}nextjs.png`
-            },
-            {
-                name: "Angular",
-                logo: `${isDev ? '/' : ''}angular.png`
-            },
-            {
-                name: "TailwindCSS",
-                logo: `${isDev ? '/' : ''}tailwind-css.png`
-            },
-            {
-                name: "HTML",
-                logo: `${isDev ? '/' : ''}html.png`
-            }
+            { name: "Next.js", logo: `${isDev ? '/' : ''}nextjs.png` },
+            { name: "Angular", logo: `${isDev ? '/' : ''}angular.png` },
+            { name: "TailwindCSS", logo: `${isDev ? '/' : ''}tailwind-css.png` },
+            { name: "HTML", logo: `${isDev ? '/' : ''}html.png` }
+        ]
+    },
+    devops: {
+        label: "DevOps & Cloud",
+        items: [
+            { name: "Docker", logo: `${isDev ? '/' : ''}docker.png` },
+            { name: "AWS", logo: `${isDev ? '/' : ''}aws.png` },
+            { name: "Kafka", logo: `${isDev ? '/' : ''}kafka.png` }
+        ]
+    },
+    api: {
+        label: "API & Communication",
+        items: [
+            { name: "REST APIs", logo: null },
+            { name: "gRPC", logo: null }
         ]
     },
     tools: {
         label: "Tools",
         items: [
-            {
-                name: "Docker",
-                logo: `${isDev ? '/' : ''}docker.png`
-            },
-            {
-                name: "Linux",
-                logo: `${isDev ? '/' : ''}linux.png`
-            },
-            {
-                name: "AWS",
-                logo: `${isDev ? '/' : ''}aws.png`
-            },
-            {
-                name: "Redis",
-                logo: `${isDev ? '/' : ''}redis.png`
-            },
-            {
-                name: "Pydentic",
-                logo: `${isDev ? '/' : ''}pydentic.png`
-            },
-            {
-                name: "Kafka",
-                logo: `${isDev ? '/' : ''}kafka.png`
-            },
-            {
-                name: "Git",
-                logo: `${isDev ? '/' : ''}git.png`
-            }
+            { name: "Git", logo: `${isDev ? '/' : ''}git.png` },
+            { name: "VSCode", logo: `${isDev ? '/' : ''}vscode.png` },
+            { name: "Postman", logo: `${isDev ? '/' : ''}postman.png` },
+            { name: "Swagger", logo: `${isDev ? '/' : ''}swagger.png` }
         ]
     }
 };
+
+
 
 
 export const experiences: Experience[] = [
