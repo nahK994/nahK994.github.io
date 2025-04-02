@@ -7,8 +7,8 @@ function SkillCard({ skill }: { skill: SkillInfo }) {
         <h2 className="text-xl font-bold mb-3 text-gray-700">{skill.label}</h2>
         <div className="flex flex-wrap gap-4">
             {skill.items.map((item) => (
-                <div key={item.name} className="flex items-center bg-gray-100 rounded-lg shadow-md p-2 hover:scale-105 transition-transform duration-200 cursor-pointer">
-                    <Image src={item.logo} alt={item.name} width={20} height={20} className="w-6 h-6" />
+                <div key={item.name} className="flex items-center bg-gray-100 rounded-lg shadow-sm p-1 hover:scale-110 transition-transform duration-200 cursor-pointer">
+                    {item.logo && <Image src={item.logo} alt={item.name} width={20} height={20} className="w-6 h-6" />}
                     <span key={item.name} className="px-3 py-1 text-gray-600 font-medium">{item.name}</span>
                 </div>
             ))}
@@ -25,6 +25,8 @@ export default function Skills({ skill, sectionId }: { skill: SkillCategory; sec
                     <SkillCard key={skill.backend.label} skill={skill.backend} />
                     <SkillCard key={skill.frontend.label} skill={skill.frontend} />
                     <SkillCard key={skill.tools.label} skill={skill.tools} />
+                    <SkillCard key={skill.devops.label} skill={skill.devops} />
+                    <SkillCard key={skill.api.label} skill={skill.api} />
                 </div>
             </div>
         </section>

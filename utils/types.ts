@@ -37,7 +37,7 @@ export interface Profile {
 // Skill Categories
 interface SkillItem {
     name: string;
-    logo: string;
+    logo: string | null;
 };
 
 export interface SkillInfo {
@@ -52,6 +52,8 @@ export interface SkillCategory {
     backend: SkillInfo;
     frontend: SkillInfo;
     tools: SkillInfo;
+    devops: SkillInfo;
+    api: SkillInfo;
 };
 
 // Experience Section
