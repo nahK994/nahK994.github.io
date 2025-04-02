@@ -35,16 +35,23 @@ export interface Profile {
 };
 
 // Skill Categories
-export interface SkillItem {
+interface SkillItem {
     name: string;
     logo: string;
 };
 
+export interface SkillInfo {
+    label: string;
+    items: SkillItem[];
+};
+
+
+
 export interface SkillCategory {
-    language: SkillItem[];
-    backend: SkillItem[];
-    frontend: SkillItem[];
-    tools: SkillItem[];
+    language: SkillInfo;
+    backend: SkillInfo;
+    frontend: SkillInfo;
+    tools: SkillInfo;
 };
 
 // Experience Section
