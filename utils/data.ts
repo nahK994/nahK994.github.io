@@ -63,7 +63,8 @@ export const skill: SkillCategory = {
             { name: "Django", logo: `${isDev ? '/' : ''}django.png` },
             { name: "FastAPI", logo: `${isDev ? '/' : ''}fastapi.png` },
             { name: "PostgreSQL", logo: `${isDev ? '/' : ''}postgresql.png` },
-            { name: "Redis", logo: `${isDev ? '/' : ''}redis.png` }
+            { name: "Redis", logo: `${isDev ? '/' : ''}redis.png` },
+            { name: "RabbitMQ", logo: `${isDev ? '/' : ''}rabbitmq.png` }
         ]
     },
     frontend: {
@@ -80,7 +81,7 @@ export const skill: SkillCategory = {
         items: [
             { name: "Docker", logo: `${isDev ? '/' : ''}docker.png` },
             { name: "AWS", logo: `${isDev ? '/' : ''}aws.png` },
-            { name: "Kafka", logo: `${isDev ? '/' : ''}kafka.png` }
+            { name: "Nginx", logo: `${isDev ? '/' : ''}nginx.png` }
         ]
     },
     api: {
