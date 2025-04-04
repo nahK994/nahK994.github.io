@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function SkillCard({ skill }: { skill: SkillInfo }) {
     return <div className="bg-white shadow-lg w-full md:max-w-2/5 rounded-2xl">
-        <h2 className="text-xl font-bold mb-3 rounded-t-2xl text-gray-600 bg-amber-100 p-4">{skill.label}</h2>
+        <h2 className="text-xl font-bold mb-4 rounded-t-2xl text-gray-600 bg-amber-100 p-4">{skill.label}</h2>
         <div className="flex flex-wrap gap-4 px-4 pb-4">
             {skill.items.map((item) => (
                 <div key={item.name} className="flex items-center bg-gray-100 shadow-sm py-2 px-3 gap-2 rounded-2xl hover:scale-110 transition-transform duration-200 cursor-pointer">
