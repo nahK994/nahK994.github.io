@@ -50,6 +50,7 @@ export interface SkillInfo {
 export interface SkillCategory {
     language: SkillInfo;
     backend: SkillInfo;
+    database: SkillInfo;
     frontend: SkillInfo;
     tools: SkillInfo;
     devops: SkillInfo;

@@ -61,10 +61,14 @@ export const skill: SkillCategory = {
         items: [
             { name: "Gin", logo: `${isDev ? '/' : ''}gin.png` },
             { name: "Django", logo: `${isDev ? '/' : ''}django.png` },
-            { name: "FastAPI", logo: `${isDev ? '/' : ''}fastapi.png` },
+            { name: "FastAPI", logo: `${isDev ? '/' : ''}fastapi.png` }
+        ]
+    },
+    database: {
+        label: "Database",
+        items: [
             { name: "PostgreSQL", logo: `${isDev ? '/' : ''}postgresql.png` },
-            { name: "Redis", logo: `${isDev ? '/' : ''}redis.png` },
-            { name: "RabbitMQ", logo: `${isDev ? '/' : ''}rabbitmq.png` }
+            { name: "Redis", logo: `${isDev ? '/' : ''}redis.png` }
         ]
     },
     frontend: {
@@ -88,7 +92,8 @@ export const skill: SkillCategory = {
         label: "API & Communication",
         items: [
             { name: "REST APIs", logo: null },
-            { name: "gRPC", logo: null }
+            { name: "gRPC", logo: null },
+            { name: "RabbitMQ", logo: `${isDev ? '/' : ''}rabbitmq.png` }
         ]
     },
     tools: {

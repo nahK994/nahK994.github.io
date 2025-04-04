@@ -23,6 +23,7 @@ export default function Skills({ skill, sectionId }: { skill: SkillCategory; sec
                 <div className="flex flex-row flex-wrap justify-center gap-6 px-4 max-w-5xl">
                     <SkillCard key={skill.language.label} skill={skill.language} />
                     <SkillCard key={skill.backend.label} skill={skill.backend} />
+                    <SkillCard key={skill.database.label} skill={skill.database} />
                     <SkillCard key={skill.devops.label} skill={skill.devops} />
                     <SkillCard key={skill.api.label} skill={skill.api} />
                     <SkillCard key={skill.frontend.label} skill={skill.frontend} />
