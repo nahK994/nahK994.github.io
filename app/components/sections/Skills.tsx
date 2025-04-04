@@ -3,13 +3,13 @@ import Image from "next/image";
 
 
 function SkillCard({ skill }: { skill: SkillInfo }) {
-    return <div className="bg-white shadow-lg rounded-2xl p-4 w-full md:max-w-1/3">
-        <h2 className="text-xl font-bold mb-3 text-gray-700">{skill.label}</h2>
-        <div className="flex flex-wrap gap-4">
+    return <div className="bg-white shadow-lg w-full md:max-w-2/5 rounded-2xl">
+        <h2 className="text-xl font-bold mb-3 rounded-t-2xl text-gray-600 bg-amber-100 p-4">{skill.label}</h2>
+        <div className="flex flex-wrap gap-4 px-4 pb-4">
             {skill.items.map((item) => (
-                <div key={item.name} className="flex items-center bg-gray-100 rounded-lg shadow-sm p-1 hover:scale-110 transition-transform duration-200 cursor-pointer">
+                <div key={item.name} className="flex items-center bg-gray-100 shadow-sm py-2 px-3 gap-2 rounded-2xl hover:scale-110 transition-transform duration-200 cursor-pointer">
                     {item.logo && <Image src={item.logo} alt={item.name} width={20} height={20} className="w-6 h-6" />}
-                    <span key={item.name} className="px-3 py-1 text-gray-600 font-medium">{item.name}</span>
+                    <span key={item.name} className="text-gray-600 font-medium">{item.name}</span>
                 </div>
             ))}
         </div>
