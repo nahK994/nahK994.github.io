@@ -10,6 +10,8 @@ import (
 func SetupRouter(handler *handler.Userhandler) *gin.Engine {
 	r := gin.Default()
 
+	r.GET("/ping", handler.Ping)
+
 	r.POST("/users", handler.CreateUser)
 	r.POST("/login", handler.Login)
 

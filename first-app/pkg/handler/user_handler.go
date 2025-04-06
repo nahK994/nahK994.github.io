@@ -120,3 +120,7 @@ func (h *Userhandler) DeleteUser(c *gin.Context) {
 	}
 	c.JSON(http.StatusOK, gin.H{"message": "deleted"})
 }
+
+func (h *Userhandler) Ping(c *gin.Context) {
+	c.JSON(http.StatusOK, "Pong")
+}
