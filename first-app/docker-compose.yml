@@ -1,12 +1,9 @@
 version: '3'
 services:
-  auth_db:
-    container_name: user_db
-    image: postgres
-    restart: always
+  first-app:
+    container_name: first_app
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - 5432:5432
-    environment:
-      - POSTGRES_USER=user
-      - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=user_db
+      - 8000:8000
