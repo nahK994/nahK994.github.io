@@ -61,7 +61,9 @@ export const skill: SkillCategory = {
         items: [
             { name: "Gin", logo: `${isDev ? '/' : ''}gin.png` },
             { name: "Django", logo: `${isDev ? '/' : ''}django.png` },
-            { name: "FastAPI", logo: `${isDev ? '/' : ''}fastapi.png` }
+            { name: "DRF", logo: `${isDev ? '/' : ''}drf.png` },
+            { name: "FastAPI", logo: `${isDev ? '/' : ''}fastapi.png` },
+            { name: "Goose", logo: `${isDev ? '/' : ''}goose.png` }
         ]
     },
     database: {
@@ -102,7 +104,8 @@ export const skill: SkillCategory = {
             { name: "Git", logo: `${isDev ? '/' : ''}git.png` },
             { name: "VSCode", logo: `${isDev ? '/' : ''}vscode.png` },
             { name: "Postman", logo: `${isDev ? '/' : ''}postman.png` },
-            { name: "Swagger", logo: `${isDev ? '/' : ''}swagger.png` }
+            { name: "Swagger", logo: `${isDev ? '/' : ''}swagger.png` },
+            { name: "Makefile", logo: `${isDev ? '/' : ''}makefile.png` }
         ]
     }
 };
