@@ -1,23 +1,18 @@
 package main
 
 import (
+	"first-app/handler"
 	"fmt"
-	"simple-CRUD/pkg/app"
-	"simple-CRUD/pkg/handler"
-	"simple-CRUD/pkg/repository"
-	"simple-CRUD/pkg/router"
-	"simple-CRUD/pkg/usecase"
+
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	config := app.GetConfig()
+	h := handler.NewHandler()
 
-	db, _ := repository.MigrateDB(&config.DB)
-	usecase := usecase.NewUserUsecase(db)
-	handler := handler.NewUserHandler(usecase)
+	r := gin.Default()
+	r.GET("/ping", h.Ping)
 
-	r := router.SetupRouter(handler)
-
-	addr := fmt.Sprintf("%s:%d", config.REST.Domain, config.REST.Port)
+	addr := fmt.Sprintf("%s:%d", "localhost", 8000)
 	r.Run(addr)
 }
