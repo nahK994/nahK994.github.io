@@ -61,7 +61,6 @@ export const skill: SkillCategory = {
         items: [
             { name: "Gin", logo: `${isDev ? '/' : ''}gin.png` },
             { name: "Django", logo: `${isDev ? '/' : ''}django.png` },
-            { name: "DRF", logo: `${isDev ? '/' : ''}drf.png` },
             { name: "FastAPI", logo: `${isDev ? '/' : ''}fastapi.png` },
             { name: "Goose", logo: `${isDev ? '/' : ''}goose.png` }
         ]
