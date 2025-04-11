@@ -1,5 +1,5 @@
 # Use an official lightweight web server image as the base
-FROM nginx:alpine
+FROM nginx:latest
 
 # Remove the default Nginx configuration
 RUN rm /etc/nginx/conf.d/default.conf
