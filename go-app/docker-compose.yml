@@ -1,7 +1,7 @@
 version: '3'
 services:
-  first-app:
-    container_name: first_app
+  go-app:
+    container_name: go_app
     build:
       context: .
       dockerfile: Dockerfile
