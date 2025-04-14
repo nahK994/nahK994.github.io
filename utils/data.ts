@@ -73,7 +73,8 @@ export const skill: SkillCategory = {
             { name: "Next.js", logo: `${isDev ? '/' : ''}nextjs.png` },
             { name: "Angular", logo: `${isDev ? '/' : ''}angular.png` },
             { name: "TailwindCSS", logo: `${isDev ? '/' : ''}tailwind-css.png` },
-            { name: "HTML", logo: `${isDev ? '/' : ''}html.png` }
+            { name: "HTML", logo: `${isDev ? '/' : ''}html.png` },
+            { name: "Bootstrap", logo: `${isDev ? '/' : ''}bootstrap.png` }
         ]
     },
     devops: {
@@ -99,7 +100,8 @@ export const skill: SkillCategory = {
             { name: "VSCode", logo: `${isDev ? '/' : ''}vscode.png` },
             { name: "Postman", logo: `${isDev ? '/' : ''}postman.png` },
             { name: "Swagger", logo: `${isDev ? '/' : ''}swagger.png` },
-            { name: "Makefile", logo: `${isDev ? '/' : ''}makefile.png` }
+            { name: "Makefile", logo: `${isDev ? '/' : ''}makefile.png` },
+            { name: "Ubuntu", logo: `${isDev ? '/' : ''}ubuntu.png` },
         ]
     }
 };
