@@ -16,8 +16,8 @@ export default function About(  {aboutMe, sectionId}: {aboutMe: AboutMeInfo; sec
                     <p className="text-gray-800 text-lg">{aboutMe.myself}</p>
                     <Image src="/programmer.png" alt="Shomi Khan" width={96} height={96} className="mt-4 sm:mt-0" />
                 </div>
-                <p className="pr-3 text-gray-800 mb-4 text-lg">{aboutMe.passion}</p>
-                <p className="pr-3 text-gray-800 mb-4 text-lg">{aboutMe.hobby}</p>
+                <p className="text-gray-800 mb-4 text-lg">{aboutMe.passion}</p>
+                <p className="text-gray-800 mb-4 text-lg">{aboutMe.hobby}</p>
             </div>
         </Card>
     </section>
