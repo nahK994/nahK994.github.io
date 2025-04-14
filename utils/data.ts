@@ -1,4 +1,3 @@
-import { text } from "stream/consumers";
 import { AboutMeInfo, Experience, HeroInfo, NavItem, Profile, SkillCategory, SocialProfile, Welcome } from "./types";
 
 const isDev = process.env.NODE_ENV === 'development';
@@ -25,7 +24,7 @@ export const aboutMe: AboutMeInfo = {
 export const profile: Profile = {
     github: {
         url: "https://github.com/shomi-khan",
-        logoUrl: `${isDev ? '/social/' : ''}github.png`
+        logoUrl: 'github.png'
     },
     facebook: {
         url: "https://www.facebook.com/shomi.khan1",
