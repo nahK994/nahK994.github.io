@@ -1,6 +1,7 @@
-import { AboutMeInfo, Experience, HeroInfo, NavItem, Profile, SkillCategory, SocialProfile, Welcome } from "./types";
+import { AboutMeInfo, Experience, HeroInfo, NavItem, Profile, SkillCategory, Welcome } from "./types";
 
 const isDev = process.env.NODE_ENV === 'development';
+const imgPath = (folder: string, file: string) => `${isDev ? `/${folder}/` : `${folder}/`}${file}`;
 
 export const navItems: NavItem[] = [
     { id: "", label: "Home", icon: "🏠" },
@@ -24,64 +25,64 @@ export const aboutMe: AboutMeInfo = {
 export const profile: Profile = {
     github: {
         url: "https://github.com/shomi-khan",
-        logoUrl: 'github.png'
+        logoUrl: imgPath("social", "github.png")
     },
     facebook: {
         url: "https://www.facebook.com/shomi.khan1",
-        logoUrl: `${isDev ? '/social/' : 'social/'}facebook.png`
+        logoUrl: imgPath("social", "facebook.png")
     },
     linkedin: {
         url: "https://linkedin.com/in/shomikhan",
-        logoUrl: `${isDev ? '/social/' : ''}linkedin.png`
+        logoUrl: imgPath("social", "linkedin.png")
     },
     gmail: {
         url: "shomikhan043@gmail.com",
-        logoUrl: `${isDev ? '/social/' : ''}gmail.png`
+        logoUrl: imgPath("social", "gmail.png")
     },
     whatsapp: {
         number: "+8801676498001",
-        logoUrl: `${isDev ? '/social/' : ''}whatsapp.png`
+        logoUrl: imgPath("social", "whatsapp.png")
     }
-}
+};
 
 export const skill: SkillCategory = {
     language: {
         label: "Programming Languages",
         items: [
-            { name: "Python", logo: `${isDev ? '/skill/' : ''}python.png` },
-            { name: "Golang", logo: `${isDev ? '/skill/' : ''}golang.png` },
-            { name: "TypeScript", logo: `${isDev ? '/skill/' : ''}typescript.png` },
-            { name: "C++", logo: `${isDev ? '/skill/' : ''}c++.png` },
-            { name: "Bash", logo: `${isDev ? '/skill/' : ''}bash.png` }
+            { name: "Python", logo: imgPath("skill", "python.png") },
+            { name: "Golang", logo: imgPath("skill", "golang.png") },
+            { name: "TypeScript", logo: imgPath("skill", "typescript.png") },
+            { name: "C++", logo: imgPath("skill", "c++.png") },
+            { name: "Bash", logo: imgPath("skill", "bash.png") }
         ]
     },
     backend: {
         label: "Backend",
         items: [
-            { name: "Gin", logo: `${isDev ? '/skill/' : ''}gin.png` },
-            { name: "Django", logo: `${isDev ? '/skill/' : ''}django.png` },
-            { name: "FastAPI", logo: `${isDev ? '/skill/' : ''}fastapi.png` },
-            { name: "Goose", logo: `${isDev ? '/skill/' : ''}goose.png` },
-            { name: "PostgreSQL", logo: `${isDev ? '/skill/' : ''}postgresql.png` },
-            { name: "Redis", logo: `${isDev ? '/skill/' : ''}redis.png` }
+            { name: "Gin", logo: imgPath("skill", "gin.png") },
+            { name: "Django", logo: imgPath("skill", "django.png") },
+            { name: "FastAPI", logo: imgPath("skill", "fastapi.png") },
+            { name: "Goose", logo: imgPath("skill", "goose.png") },
+            { name: "PostgreSQL", logo: imgPath("skill", "postgresql.png") },
+            { name: "Redis", logo: imgPath("skill", "redis.png") }
         ]
     },
     frontend: {
         label: "Frontend",
         items: [
-            { name: "Next.js", logo: `${isDev ? '/skill/' : ''}nextjs.png` },
-            { name: "Angular", logo: `${isDev ? '/skill/' : ''}angular.png` },
-            { name: "TailwindCSS", logo: `${isDev ? '/skill/' : ''}tailwind-css.png` },
-            { name: "HTML", logo: `${isDev ? '/skill/' : ''}html.png` },
-            { name: "Bootstrap", logo: `${isDev ? '/skill/' : ''}bootstrap.png` }
+            { name: "Next.js", logo: imgPath("skill", "nextjs.png") },
+            { name: "Angular", logo: imgPath("skill", "angular.png") },
+            { name: "TailwindCSS", logo: imgPath("skill", "tailwind- css.png") },
+            { name: "HTML", logo: imgPath("skill", "html.png") },
+            { name: "Bootstrap", logo: imgPath("skill", "bootstrap.png") }
         ]
     },
     devops: {
         label: "DevOps & Cloud",
         items: [
-            { name: "Docker", logo: `${isDev ? '/skill/' : ''}docker.png` },
-            { name: "AWS", logo: `${isDev ? '/skill/' : ''}aws.png` },
-            { name: "Nginx", logo: `${isDev ? '/skill/' : ''}nginx.png` }
+            { name: "Docker", logo: imgPath("skill", "docker.png") },
+            { name: "AWS", logo: imgPath("skill", "aws.png") },
+            { name: "Nginx", logo: imgPath("skill", "nginx.png") }
         ]
     },
     api: {
@@ -89,18 +90,18 @@ export const skill: SkillCategory = {
         items: [
             { name: "REST APIs", logo: null },
             { name: "gRPC", logo: null },
-            { name: "RabbitMQ", logo: `${isDev ? '/skill/' : ''}rabbitmq.png` }
+            { name: "RabbitMQ", logo: imgPath("skill", "rabbitmq.png") }
         ]
     },
     tools: {
         label: "Tools",
         items: [
-            { name: "Git", logo: `${isDev ? '/skill/' : ''}git.png` },
-            { name: "VSCode", logo: `${isDev ? '/skill/' : ''}vscode.png` },
-            { name: "Postman", logo: `${isDev ? '/skill/' : ''}postman.png` },
-            { name: "Swagger", logo: `${isDev ? '/skill/' : ''}swagger.png` },
-            { name: "Makefile", logo: `${isDev ? '/skill/' : ''}makefile.png` },
-            { name: "Ubuntu", logo: `${isDev ? '/skill/' : ''}ubuntu.png` },
+            { name: "Git", logo: imgPath("skill", "git.png") },
+            { name: "VSCode", logo: imgPath("skill", "vscode.png") },
+            { name: "Postman", logo: imgPath("skill", "postman.png") },
+            { name: "Swagger", logo: imgPath("skill", "swagger.png") },
+            { name: "Makefile", logo: imgPath("skill", "makefile.png") },
+            { name: "Ubuntu", logo: imgPath("skill", "ubuntu.png") },
         ]
     }
 };
