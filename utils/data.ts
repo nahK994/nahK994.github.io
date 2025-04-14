@@ -28,7 +28,7 @@ export const profile: Profile = {
     },
     facebook: {
         url: "https://www.facebook.com/shomi.khan1",
-        logoUrl: `${isDev ? '/social/' : ''}facebook.png`
+        logoUrl: 'facebook.png'
     },
     linkedin: {
         url: "https://linkedin.com/in/shomikhan",
