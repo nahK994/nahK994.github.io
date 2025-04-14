@@ -25,23 +25,23 @@ export const aboutMe: AboutMeInfo = {
 export const profile: Profile = {
     github: {
         url: "https://github.com/shomi-khan",
-        logoUrl: `${isDev ? '/' : ''}github.png`
+        logoUrl: `${isDev ? '/social/' : ''}github.png`
     },
     facebook: {
         url: "https://www.facebook.com/shomi.khan1",
-        logoUrl: `${isDev ? '/' : ''}facebook.png`
+        logoUrl: `${isDev ? '/social/' : ''}facebook.png`
     },
     linkedin: {
         url: "https://linkedin.com/in/shomikhan",
-        logoUrl: `${isDev ? '/' : ''}linkedin.png`
+        logoUrl: `${isDev ? '/social/' : ''}linkedin.png`
     },
     gmail: {
         url: "shomikhan043@gmail.com",
-        logoUrl: `${isDev ? '/' : ''}gmail.png`
+        logoUrl: `${isDev ? '/social/' : ''}gmail.png`
     },
     whatsapp: {
         number: "+8801676498001",
-        logoUrl: `${isDev ? '/' : ''}whatsapp.png`
+        logoUrl: `${isDev ? '/social/' : ''}whatsapp.png`
     }
 }
 
@@ -49,40 +49,40 @@ export const skill: SkillCategory = {
     language: {
         label: "Programming Languages",
         items: [
-            { name: "Python", logo: `${isDev ? '/' : ''}python.png` },
-            { name: "Golang", logo: `${isDev ? '/' : ''}golang.png` },
-            { name: "TypeScript", logo: `${isDev ? '/' : ''}typescript.png` },
-            { name: "C++", logo: `${isDev ? '/' : ''}c++.png` },
-            { name: "Bash", logo: `${isDev ? '/' : ''}bash.png` }
+            { name: "Python", logo: `${isDev ? '/skill/' : ''}python.png` },
+            { name: "Golang", logo: `${isDev ? '/skill/' : ''}golang.png` },
+            { name: "TypeScript", logo: `${isDev ? '/skill/' : ''}typescript.png` },
+            { name: "C++", logo: `${isDev ? '/skill/' : ''}c++.png` },
+            { name: "Bash", logo: `${isDev ? '/skill/' : ''}bash.png` }
         ]
     },
     backend: {
         label: "Backend",
         items: [
-            { name: "Gin", logo: `${isDev ? '/' : ''}gin.png` },
-            { name: "Django", logo: `${isDev ? '/' : ''}django.png` },
-            { name: "FastAPI", logo: `${isDev ? '/' : ''}fastapi.png` },
-            { name: "Goose", logo: `${isDev ? '/' : ''}goose.png` },
-            { name: "PostgreSQL", logo: `${isDev ? '/' : ''}postgresql.png` },
-            { name: "Redis", logo: `${isDev ? '/' : ''}redis.png` }
+            { name: "Gin", logo: `${isDev ? '/skill/' : ''}gin.png` },
+            { name: "Django", logo: `${isDev ? '/skill/' : ''}django.png` },
+            { name: "FastAPI", logo: `${isDev ? '/skill/' : ''}fastapi.png` },
+            { name: "Goose", logo: `${isDev ? '/skill/' : ''}goose.png` },
+            { name: "PostgreSQL", logo: `${isDev ? '/skill/' : ''}postgresql.png` },
+            { name: "Redis", logo: `${isDev ? '/skill/' : ''}redis.png` }
         ]
     },
     frontend: {
         label: "Frontend",
         items: [
-            { name: "Next.js", logo: `${isDev ? '/' : ''}nextjs.png` },
-            { name: "Angular", logo: `${isDev ? '/' : ''}angular.png` },
-            { name: "TailwindCSS", logo: `${isDev ? '/' : ''}tailwind-css.png` },
-            { name: "HTML", logo: `${isDev ? '/' : ''}html.png` },
-            { name: "Bootstrap", logo: `${isDev ? '/' : ''}bootstrap.png` }
+            { name: "Next.js", logo: `${isDev ? '/skill/' : ''}nextjs.png` },
+            { name: "Angular", logo: `${isDev ? '/skill/' : ''}angular.png` },
+            { name: "TailwindCSS", logo: `${isDev ? '/skill/' : ''}tailwind-css.png` },
+            { name: "HTML", logo: `${isDev ? '/skill/' : ''}html.png` },
+            { name: "Bootstrap", logo: `${isDev ? '/skill/' : ''}bootstrap.png` }
         ]
     },
     devops: {
         label: "DevOps & Cloud",
         items: [
-            { name: "Docker", logo: `${isDev ? '/' : ''}docker.png` },
-            { name: "AWS", logo: `${isDev ? '/' : ''}aws.png` },
-            { name: "Nginx", logo: `${isDev ? '/' : ''}nginx.png` }
+            { name: "Docker", logo: `${isDev ? '/skill/' : ''}docker.png` },
+            { name: "AWS", logo: `${isDev ? '/skill/' : ''}aws.png` },
+            { name: "Nginx", logo: `${isDev ? '/skill/' : ''}nginx.png` }
         ]
     },
     api: {
@@ -90,18 +90,18 @@ export const skill: SkillCategory = {
         items: [
             { name: "REST APIs", logo: null },
             { name: "gRPC", logo: null },
-            { name: "RabbitMQ", logo: `${isDev ? '/' : ''}rabbitmq.png` }
+            { name: "RabbitMQ", logo: `${isDev ? '/skill/' : ''}rabbitmq.png` }
         ]
     },
     tools: {
         label: "Tools",
         items: [
-            { name: "Git", logo: `${isDev ? '/' : ''}git.png` },
-            { name: "VSCode", logo: `${isDev ? '/' : ''}vscode.png` },
-            { name: "Postman", logo: `${isDev ? '/' : ''}postman.png` },
-            { name: "Swagger", logo: `${isDev ? '/' : ''}swagger.png` },
-            { name: "Makefile", logo: `${isDev ? '/' : ''}makefile.png` },
-            { name: "Ubuntu", logo: `${isDev ? '/' : ''}ubuntu.png` },
+            { name: "Git", logo: `${isDev ? '/skill/' : ''}git.png` },
+            { name: "VSCode", logo: `${isDev ? '/skill/' : ''}vscode.png` },
+            { name: "Postman", logo: `${isDev ? '/skill/' : ''}postman.png` },
+            { name: "Swagger", logo: `${isDev ? '/skill/' : ''}swagger.png` },
+            { name: "Makefile", logo: `${isDev ? '/skill/' : ''}makefile.png` },
+            { name: "Ubuntu", logo: `${isDev ? '/skill/' : ''}ubuntu.png` },
         ]
     }
 };
