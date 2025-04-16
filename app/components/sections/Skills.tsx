@@ -20,7 +20,7 @@ export default function Skills({ skill, sectionId }: { skill: SkillCategory; sec
     return (
         <section id={sectionId} className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-yellow-50">
             <div className="min-h-screen flex flex-col items-center justify-center py-10">
-                <div className="flex flex-row flex-wrap justify-center gap-6 px-4 max-w-full">
+                <div className="flex flex-row flex-wrap justify-center gap-6 px-4">
                     <SkillCard key={skill.language.label} skill={skill.language} />
                     <SkillCard key={skill.backend.label} skill={skill.backend} />
                     <SkillCard key={skill.frontend.label} skill={skill.frontend} />
