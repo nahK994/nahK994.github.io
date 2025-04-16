@@ -44,6 +44,3 @@ kubectl rollout undo deployment/$DEPLOYMENT_NAME --to-revision=1
 # Delete Deployment and Service
 kubectl delete deployment $DEPLOYMENT_NAME
 kubectl delete service $DEPLOYMENT_NAME
-
-# Delete all Pods in the Deployment (Fixed Issue)
-kubectl delete pods -l app=$DEPLOYMENT_NAME
