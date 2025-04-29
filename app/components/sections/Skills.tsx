@@ -1,4 +1,4 @@
-import { SkillCategory, SkillInfo } from "../../../utils/types";
+import { SkillCategory, SkillInfo } from "../../../content/types";
 import Image from "next/image";
 
 

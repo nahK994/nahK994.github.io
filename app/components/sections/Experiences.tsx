@@ -1,5 +1,5 @@
 import React from "react";
-import { Experience } from "../../../utils/types";
+import { Experience } from "../../../content/types";
 import { Card } from "../ui/Card";
 
 export default function Experiences({experiences, sectionId}: {experiences: Experience[]; sectionId: string}) {
