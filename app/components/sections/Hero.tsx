@@ -1,4 +1,4 @@
-import { HeroInfo } from "../../../utils/types";
+import { HeroInfo } from "../../../content/types";
 
 export default function Hero({hero, githubUrl, sectionId}: {hero: HeroInfo, githubUrl: string, sectionId: string}) {
     return <section id={sectionId} className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-yellow-50">

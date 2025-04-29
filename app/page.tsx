@@ -4,7 +4,7 @@ import Experiences from "./components/sections/Experiences";
 import Hero from "./components/sections/Hero";
 import Sidebar from "./components/ui/Sidebar";
 import Skills from "./components/sections/Skills";
-import { aboutMe, experiences, hero, navItems, profile, skill, welcome } from "../utils/data";
+import { aboutMe, experiences, hero, navItems, profile, skill, welcome } from "../content/data";
 
 export default function Home() {
   return (
