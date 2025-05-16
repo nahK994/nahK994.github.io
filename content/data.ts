@@ -73,8 +73,7 @@ export const skill: SkillCategory = {
             { name: "Next.js", logo: imgPath("skill", "nextjs.png") },
             { name: "Angular", logo: imgPath("skill", "angular.png") },
             { name: "TailwindCSS", logo: imgPath("skill", "tailwind-css.png") },
-            { name: "HTML", logo: imgPath("skill", "html.png") },
-            { name: "Bootstrap", logo: imgPath("skill", "bootstrap.png") }
+            { name: "HTML", logo: imgPath("skill", "html.png") }
         ]
     },
     devops: {
