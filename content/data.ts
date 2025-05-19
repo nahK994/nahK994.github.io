@@ -99,7 +99,7 @@ export const skill: SkillCategory = {
             { name: "VSCode", logo: imgPath("skill", "vscode.png") },
             { name: "Postman", logo: imgPath("skill", "postman.png") },
             { name: "Swagger", logo: imgPath("skill", "swagger.png") },
-            { name: "Makefile", logo: imgPath("skill", "makefile.png") },
+            { name: "Pycharm", logo: imgPath("skill", "pycharm.png") },
             { name: "Ubuntu", logo: imgPath("skill", "ubuntu.png") },
         ]
     }
