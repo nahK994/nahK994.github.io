@@ -2,9 +2,9 @@ import Image from 'next/image';
 import { Profile } from '../../../content/types';
 import { Card } from '../ui/Card';
 
-export default function ContactMe({ profile, welcome, sectionId }: { profile: Profile; welcome: string; sectionId: string }) {
+export default function ContactMe({ profile, welcome, sectionId, baseCSS, bgColor }: { profile: Profile; welcome: string; sectionId: string, baseCSS: string, bgColor: string }) {
     return (
-        <section id={sectionId} className="flex justify-center items-center h-screen font-mono px-3 bg-gradient-to-b from-green-50 to-yellow-50">
+        <section id={sectionId} className={`${baseCSS} ${bgColor}`}>
             <Card>
                 <div className=" py-8 px-2 sm:px-12 max-w-lg text-center">
                     <p className="text-gray-800 text-lg">{welcome}</p>

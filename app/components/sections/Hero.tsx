@@ -1,7 +1,7 @@
 import { HeroInfo } from "../../../content/types";
 
-export default function Hero({hero, githubUrl, sectionId}: {hero: HeroInfo, githubUrl: string, sectionId: string}) {
-    return <section id={sectionId} className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-yellow-50">
+export default function Hero({hero, githubUrl, sectionId, bgColor, baseCSS}: {hero: HeroInfo, githubUrl: string, sectionId: string, bgColor: string, baseCSS: string}) {
+    return <section id={sectionId} className={`${baseCSS} ${bgColor}`}>
         <div className="text-center flex flex-col items-center animate-fadeIn fadeIn px-4 sm:px-0">
             <h1 className="text-3xl md:text-5xl font-bold mb-4 text-gray-700">
                 {hero.title}

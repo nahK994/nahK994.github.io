@@ -2,9 +2,9 @@ import React from "react";
 import { Experience } from "../../../content/types";
 import { Card } from "../ui/Card";
 
-export default function Experiences({experiences, sectionId}: {experiences: Experience[]; sectionId: string}) {
+export default function Experiences({experiences, sectionId, baseCSS, bgColor}: {experiences: Experience[]; sectionId: string, baseCSS: string, bgColor: string}) {
     return (
-        <section id={sectionId} className="flex justify-center items-center min-h-screen font-mono px-3 bg-gradient-to-b to-green-50 from-yellow-50 text-gray-900">
+        <section id={sectionId} className={`${baseCSS} ${bgColor}`}>
             <Card>
                 <div className="py-8 px-2 sm:px-4 max-w-fit">
                     {experiences.map((exp, index) => (
