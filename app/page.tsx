@@ -7,7 +7,7 @@ import Skills from "./components/sections/Skills";
 import { aboutMe, experiences, hero, navItems, profile, skill, welcome } from "../content/data";
 
 export default function Home() {
-  const baseCSS = "flex items-center justify-center min-h-screen font-mono font-mono bg-gradient-to-b"
+  const baseCSS = "px-4 md:px-0 flex items-center justify-center min-h-screen font-mono font-mono bg-gradient-to-b"
   const bg1 = "from-white to-green-50"
   const bg2 = "from-green-50 to-white"
 
