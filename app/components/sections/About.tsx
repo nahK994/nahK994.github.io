@@ -9,7 +9,7 @@ export default function About(  {aboutMe, sectionId, bgColor, baseCSS}: {aboutMe
                 <h2 className="font-bold flex justify-center items-center mb-4 text-3xl">
                     <span className="animate-wave">👋</span>
                     <span className="mb-2 mr-4">🤓</span>
-                    <span className="text-violet-700 drop-shadow-2xl mr-2">Hey there!!</span>
+                    <span className="text-green-700 drop-shadow-2xl mr-2">Hey there!!</span>
                     <span>🎉</span>
                 </h2>
                 <div className="flex flex-col sm:flex-row justify-center items-center mb-4 gap-x-4">
