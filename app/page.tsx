@@ -8,8 +8,8 @@ import { aboutMe, experiences, hero, navItems, profile, skill, welcome } from ".
 
 export default function Home() {
   const baseCSS = "flex items-center justify-center min-h-screen font-mono font-mono bg-gradient-to-b"
-  const bg1 = "from-green-50 to-yellow-50"
-  const bg2 = "from-yellow-50 to-green-50"
+  const bg1 = "from-white to-green-50"
+  const bg2 = "from-green-50 to-white"
 
   return (
     <div className="flex flex-col">
