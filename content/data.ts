@@ -63,7 +63,10 @@ export const skill: SkillCategory = {
             { name: "Django", logo: imgPath("skill", "django.png") },
             { name: "FastAPI", logo: imgPath("skill", "fastapi.png") },
             { name: "PostgreSQL", logo: imgPath("skill", "postgresql.png") },
-            { name: "Redis", logo: imgPath("skill", "redis.png") }
+            { name: "Redis", logo: imgPath("skill", "redis.png") },
+            { name: "REST APIs", logo: null },
+            { name: "gRPC", logo: null },
+            { name: "RabbitMQ", logo: imgPath("skill", "rabbitmq.png") }
         ]
     },
     frontend: {
@@ -81,14 +84,6 @@ export const skill: SkillCategory = {
             { name: "Docker", logo: imgPath("skill", "docker.png") },
             { name: "AWS", logo: imgPath("skill", "aws.png") },
             { name: "Nginx", logo: imgPath("skill", "nginx.png") }
-        ]
-    },
-    api: {
-        label: "API & Communication",
-        items: [
-            { name: "REST APIs", logo: null },
-            { name: "gRPC", logo: null },
-            { name: "RabbitMQ", logo: imgPath("skill", "rabbitmq.png") }
         ]
     },
     tools: {

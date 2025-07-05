@@ -25,7 +25,6 @@ export default function Skills({ skill, sectionId, baseCSS, bgColor }: { skill: 
                     <SkillCard key={skill.backend.label} skill={skill.backend} />
                     <SkillCard key={skill.frontend.label} skill={skill.frontend} />
                     <SkillCard key={skill.devops.label} skill={skill.devops} />
-                    <SkillCard key={skill.api.label} skill={skill.api} />
                     <SkillCard key={skill.tools.label} skill={skill.tools} />
                 </div>
             </div>

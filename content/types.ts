@@ -53,7 +53,6 @@ export interface SkillCategory {
     frontend: SkillInfo;
     tools: SkillInfo;
     devops: SkillInfo;
-    api: SkillInfo;
 };
 
 // Experience Section
