@@ -109,12 +109,10 @@ export const experiences: Experience[] = [
         period: "Nov 2023 - Present",
         responsibilities: [
             "Developed and maintained RESTful APIs with Django",
-            "Designed database schemas and managed cached data",
-            "Managed asynchronous tasks and cron jobs",
-            "Integrated payment systems (Stripe)",
-            "Migrated frontend from React to Nextjs",
+            "Improved API performance by implementing asynchronous tasks",
+            "Integrated secure and seamless payment workflows with Stripe",
+            "Configured and managed multiple development environments",
             "Collaborated with frontend dev to ensure seamless functionality",
-            "Set up development environments",
             "Deployed the application on AWS"
         ]
     },
@@ -139,7 +137,7 @@ export const experiences: Experience[] = [
         ]
     },
     {
-        company: "Samsung R&D Institute Bangladesh (SRBD)",
+        company: "Samsung R&D Institute Bangladesh",
         role: "Intern",
         period: "Aug 2018 - Jan 2019",
         responsibilities: [

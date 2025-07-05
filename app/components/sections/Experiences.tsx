@@ -6,9 +6,9 @@ export default function Experiences({experiences, sectionId, baseCSS, bgColor}: 
     return (
         <section id={sectionId} className={`${baseCSS} ${bgColor}`}>
             <Card>
-                <div className="py-8 px-2 sm:px-4 max-w-fit">
+                <div className="py-8 px-2 sm:px-4">
                     {experiences.map((exp, index) => (
-                        <div key={index} className={`w-[90%] sm:w-150 -left-2 relative ml-6 ${index === experiences.length - 1 ? 'border-l-0 mb-0' : 'pb-8 border-orange-100 border-l-2'}`}>
+                        <div key={index} className={`w-[90%] sm:w-170 -left-2 relative ml-6 ${index === experiences.length - 1 ? 'border-l-0 mb-0' : 'pb-8 border-orange-100 border-l-2'}`}>
                             <div className="absolute w-fit h-fit rounded-full -left-3.5 text-2xl">💡</div>
                             <div className="ml-6">
                                 <h3 className="text-xl font-semibold text-green-800">{exp.role}</h3>
