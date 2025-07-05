@@ -62,7 +62,6 @@ export const skill: SkillCategory = {
             { name: "Gin", logo: imgPath("skill", "gin.png") },
             { name: "Django", logo: imgPath("skill", "django.png") },
             { name: "FastAPI", logo: imgPath("skill", "fastapi.png") },
-            { name: "Goose", logo: imgPath("skill", "goose.png") },
             { name: "PostgreSQL", logo: imgPath("skill", "postgresql.png") },
             { name: "Redis", logo: imgPath("skill", "redis.png") }
         ]

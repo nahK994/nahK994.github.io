@@ -6,7 +6,7 @@ interface CardContainerProps {
 
 export function Card({ children }: CardContainerProps) {
     return (
-        <div className="bg-white border-2 border-dashed border-red-400 rounded-2xl shadow-lg opacity-0 animate-fadeIn">
+        <div className="bg-white border-2 border-dashed border-green-700 rounded-2xl shadow-lg opacity-0 animate-fadeIn">
             {children}
         </div>
     )
