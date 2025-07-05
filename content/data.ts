@@ -18,8 +18,8 @@ export const hero: HeroInfo = {
 
 export const aboutMe: AboutMeInfo = {
     myself: "I'm Shomi Khan, backend focused full-stack software engineer 🦫🖥️🐍 from Bangladesh 🇧🇩.",
-    passion: "🌥️ Enthusiastic about writing clean code, building cloud-native solutions, ⚙️ diving into low-level systems, 🤖 automating everything possible",
-    hobby: "Apart from coding, I’m an anime fan ⛩️, former cyclist 🚴, and hobbyist photographer 📸",
+    passion: "🌥️ Enthusiastic about writing clean code, building cloud-native solutions, ⚙️ diving into low-level systems, 🤖 automating everything possible.",
+    hobby: "Apart from coding, I’m an anime fan ⛩️, former cyclist 🚴, and hobbyist photographer 📸.",
 }
 
 export const profile: Profile = {
