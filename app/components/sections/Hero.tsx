@@ -1,7 +1,7 @@
 import { HeroInfo } from "../../../content/types";
 
 export default function Hero({hero, githubUrl, sectionId, bgColor, baseCSS}: {hero: HeroInfo, githubUrl: string, sectionId: string, bgColor: string, baseCSS: string}) {
-    const btnStyle = "text-blue-500 bg-white px-6 py-3 rounded-2xl text-lg font-semibold transition-transform transform hover:scale-105 hover:shadow-lg"
+    const btnStyle = "text-blue-500 bg-white rounded-2xl text-lg font-semibold px-6 py-3 rounded-2xl shadow-md hover:shadow-lg hover:bg-gray-100 transition-all duration-300";
 
     return <section id={sectionId} className={`${baseCSS} ${bgColor}`}>
         <div className="text-center flex flex-col items-center animate-fadeIn fadeIn px-4 sm:px-0">
@@ -16,7 +16,7 @@ export default function Hero({hero, githubUrl, sectionId, bgColor, baseCSS}: {he
                     href={githubUrl} target="_blank"
                     className={`${btnStyle}`}
                 >
-                    View My Work
+                    My Github Profile
                 </a>
                 <a
                     href="ShomiKhan_Resume.pdf" target="_blank"
