@@ -5,7 +5,7 @@ const imgPath = (folder: string, file: string) => `${isDev ? `/${folder}/` : `${
 
 export const navItems: NavItem[] = [
     { id: "", label: "Home", icon: "🏠" },
-    { id: "about", label: "About", icon: "🙋‍♂️" },
+    // { id: "about", label: "About", icon: "🙋‍♂️" },
     { id: "skills", label: "Skills", icon: "🧩" },
     { id: "experiences", label: "Experiences", icon: "💡" },
     { id: "contact-me", label: "Contact", icon: "☎️" },
