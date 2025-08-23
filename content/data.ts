@@ -15,6 +15,7 @@ export const hero: HeroInfo = {
     title: "Hi, I’m Shomi Khan",
     subTitle1: "Software Engineer | Python Charmer 🐍 | Golang Alchemist 🦫",
     subTitle2: "Passionate about crafting clean code 🧹💻 and building scalable backend systems",
+    subTitle3: "Apart from coding, I’m an anime fan ⛩️, former cyclist 🚴, and hobbyist photographer 📸.",
 }
 
 export const aboutMe: AboutMeInfo = {

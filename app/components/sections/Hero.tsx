@@ -11,13 +11,13 @@ export default function Hero({hero, githubUrl, sectionId, bgColor, baseCSS}: {he
                 <span className="text-green-700 drop-shadow-2xl mr-2">Hey there!!</span>
                 <span>🎉</span>
             </div>
-            <div className="font-semibold text-2xl md:text-3xl mb-4 text-gray-700">
+            <div className="font-semibold text-2xl md:text-3xl mb-4 text-gray-600">
                 {hero.title}
             </div>
-            <div className="text-lg md:text-2xl mb-4 text-gray-700">
+            <div className="text-lg md:text-2xl mb-4 text-gray-600">
                 {hero.subTitle1}
             </div>
-            <div className="text-lg md:text-2xl mb-8 text-gray-700">
+            <div className="text-lg md:text-2xl mb-8 text-gray-600">
                 {hero.subTitle2}
             </div>
             <div className="flex flex-row flex-wrap justify-center items-center gap-4">
@@ -33,6 +33,9 @@ export default function Hero({hero, githubUrl, sectionId, bgColor, baseCSS}: {he
                 >
                     Resume
                 </a>
+            </div>
+            <div className="text-lg md:text-2xl mt-8 mb-4 text-gray-600">
+                {hero.subTitle3}
             </div>
         </div>
     </section>
