@@ -7,7 +7,8 @@ export interface NavItem {
 
 export interface HeroInfo {
     title: string;
-    subTitle: string;
+    subTitle1: string;
+    subTitle2: string;
 };
 
 // About Me Section
