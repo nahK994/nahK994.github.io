@@ -59,10 +59,10 @@ export const skill: SkillCategory = {
     backend: {
         label: "Backend",
         items: [
-            { name: "Gin", logo: imgPath("skill", "gin.png") },
             { name: "Django", logo: imgPath("skill", "django.png") },
             { name: "FastAPI", logo: imgPath("skill", "fastapi.png") },
             { name: "PostgreSQL", logo: imgPath("skill", "postgresql.png") },
+            { name: "Gin", logo: imgPath("skill", "gin.png") },
             { name: "Redis", logo: imgPath("skill", "redis.png") },
             { name: "REST APIs", logo: null },
             { name: "gRPC", logo: null },
@@ -92,7 +92,6 @@ export const skill: SkillCategory = {
             { name: "Git", logo: imgPath("skill", "git.png") },
             { name: "VSCode", logo: imgPath("skill", "vscode.png") },
             { name: "Postman", logo: imgPath("skill", "postman.png") },
-            { name: "Swagger", logo: imgPath("skill", "swagger.png") },
             { name: "Pycharm", logo: imgPath("skill", "pycharm.png") },
             { name: "Ubuntu", logo: imgPath("skill", "ubuntu.png") },
         ]
