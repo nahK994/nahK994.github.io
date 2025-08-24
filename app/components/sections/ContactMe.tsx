@@ -6,7 +6,7 @@ export default function ContactMe({ profile, welcome, sectionId, baseCSS, bgColo
     return (
         <section id={sectionId} className={`${baseCSS} ${bgColor}`}>
             <Card>
-                <div className=" py-8 px-2 sm:px-12 max-w-lg text-center">
+                <div className="py-8 px-2 sm:px-12 max-w-lg text-center">
                     <p className="text-gray-800 text-lg">{welcome}</p>
                     <div className="flex flex-col space-y-4">
                         <div className="flex justify-center gap-5 mt-5">

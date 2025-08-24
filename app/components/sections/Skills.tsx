@@ -19,7 +19,7 @@ function SkillCard({ skill }: { skill: SkillInfo }) {
 export default function Skills({ skill, sectionId, baseCSS, bgColor }: { skill: SkillCategory; sectionId: string, baseCSS: string, bgColor: string  }) {
     return (
         <section id={sectionId} className={`${baseCSS} ${bgColor}`}>
-            <div className="min-h-screen flex flex-col items-center justify-center py-10">
+            <div className="min-h-screen flex flex-col items-center justify-center py-10 animate-fadeIn">
                 <div className="flex flex-row flex-wrap justify-center gap-6 px-0 md:px-4">
                     <SkillCard key={skill.language.label} skill={skill.language} />
                     <SkillCard key={skill.backend.label} skill={skill.backend} />
