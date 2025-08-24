@@ -4,8 +4,8 @@ export default function Hero({hero, githubUrl, sectionId, bgColor, baseCSS}: {he
     const btnStyle = "text-blue-600 bg-white rounded-2xl text-lg font-semibold px-6 py-3 shadow-md hover:shadow-lg hover:bg-gray-100 transition-all duration-300";
 
     return <section id={sectionId} className={`${baseCSS} ${bgColor}`}>
-        <div className="text-center flex flex-col items-center animate-fadeIn fadeIn px-4 sm:px-0">
-            <div className="text-3xl md:text-5xl font-bold flex justify-center items-center mb-16">
+        <div className="text-center flex flex-col items-center animate-fadeIn fadeIn md:px-4 px-0">
+            <div className="text-3xl md:text-5xl font-bold flex flex-wrap justify-center items-center my-8 md:mb-16 md:mt-0">
                 <span className="animate-wave">👋</span>
                 <span className="mb-2 mr-4">🤓</span>
                 <span className="text-green-700 drop-shadow-2xl mr-2">Hey there!!</span>
