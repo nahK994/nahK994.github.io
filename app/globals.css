@@ -12,7 +12,7 @@
   }
 }
 
-.animate-fadeIn {
+section {
   animation: fadeIn 3s forwards;
 }
 
