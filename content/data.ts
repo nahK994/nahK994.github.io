@@ -105,9 +105,19 @@ export const skill: SkillCategory = {
 
 export const experiences: Experience[] = [
     {
+        company: "Brain Station 23",
+        role: "Software Engineer 2",
+        period: "May 2025 - Present",
+        responsibilities: [
+            "Designed and implemented data analysis APIs to deliver user activity reports.",
+            "Wrote optimized SQL queries for complex aggregations with performance in mind.",
+            "Performed refactoring of legecy codes to improve readability, performance and maintainability."
+        ]
+    },
+    {
         company: "GroupyFy Inc.",
         role: "Backend Software Engineer",
-        period: "Nov 2023 - Present",
+        period: "Nov 2023 - Jan 2025",
         responsibilities: [
             "Developed and maintained RESTful APIs with Django",
             "Improved API performance by implementing asynchronous tasks",
@@ -131,7 +141,6 @@ export const experiences: Experience[] = [
         period: "Apr 2020 - Dec 2022",
         responsibilities: [
             "Developed Enterprise frontend web app with Angular",
-            "Created shared UI modules for flexibility and reusability",
             "Trained and gave necessary guidelines to junior teammates",
             "Migrated full project from Python2 to Python3",
             "Developed and maintailed RESTful APIs with Django"
