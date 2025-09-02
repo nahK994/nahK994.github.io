@@ -26,9 +26,9 @@ export function ExperienceItem({ item }: ExperienceProps) {
             <div onMouseEnter={handlePopoverOpen} onMouseLeave={handlePopoverClose} className="flex bg-white rounded-2xl text-lg px-2 md:px-6 py-3 shadow-md hover:shadow-lg hover:bg-gray-100 transition-all duration-300">
                 <div className="text-2xl">{item.emoji}</div>
                 <div className="flex flex-col ml-6">
-                    <h3 className="text-xl font-semibold text-green-800">{item.role}</h3>
-                    <span className="text-blue-700">{item.company}</span>
-                    <span>{item.period}</span>
+                    <h3 className="text-xl font-weight-800 text-green-800">{item.role}</h3>
+                    <span className="text-blue-600">{item.company}</span>
+                    <span className="text-gray-600">{item.period}</span>
                 </div>
             </div>
 
@@ -47,12 +47,16 @@ export function ExperienceItem({ item }: ExperienceProps) {
                 }}
                 onClose={handlePopoverClose}
                 disableRestoreFocus
+                slotProps={{ paper: { style: { borderRadius: '8px' } } }}
             >
-                <ul className="list-disc list-inside p-4 text-green-900">
-                    {item.responsibilities.map((resp, idx) => (
-                        <li key={idx}>{resp}</li>
-                    ))}
-                </ul>
+                <div className="p-4 text-gray-600">
+                    <div className="font-semibold">Responsibilities</div>
+                    <ul className="list-disc list-inside">
+                        {item.responsibilities.map((resp, idx) => (
+                            <li key={idx}>{resp}</li>
+                        ))}
+                    </ul>
+                </div>
             </Popover>
         </>
     )

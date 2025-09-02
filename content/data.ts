@@ -120,7 +120,7 @@ export const experiences: Experience[] = [
             "Collaborated with frontend dev to ensure seamless functionality",
             "Deployed the application on AWS"
         ],
-        emoji: "🚀"
+        emoji: "✨"
     },
     {
         company: "Hubar Tech Limited",
@@ -141,7 +141,7 @@ export const experiences: Experience[] = [
             "Migrated full project from Python2 to Python3",
             "Developed and maintailed RESTful APIs with Django"
         ],
-        emoji: "🌱"
+        emoji: "🎨"
     },
     {
         company: "Samsung R&D Institute Bangladesh",
@@ -150,7 +150,7 @@ export const experiences: Experience[] = [
         responsibilities: [
             "Learnt and built basic Tizen application"
         ],
-        emoji: "🐣"
+        emoji: "🌱"
     }
 ];
 
