@@ -105,7 +105,8 @@ export const experiences: Experience[] = [
             "Designed and implemented data analysis APIs to deliver user activity reports.",
             "Wrote optimized SQL queries for complex aggregations with performance in mind.",
             "Performed refactoring of legecy codes to improve readability, performance and maintainability."
-        ]
+        ],
+        emoji: "💡"
     },
     {
         company: "GroupyFy Inc.",
@@ -118,15 +119,17 @@ export const experiences: Experience[] = [
             "Configured and managed multiple development environments",
             "Collaborated with frontend dev to ensure seamless functionality",
             "Deployed the application on AWS"
-        ]
+        ],
+        emoji: "🚀"
     },
     {
         company: "Hubar Tech Limited",
-        role: "Software Engineer",
+        role: "Python Developer",
         period: "Feb 2023 - May 2023",
         responsibilities: [
             "Created RESTful APIs",
-        ]
+        ],
+        emoji: "🐾"
     },
     {
         company: "SELISE Digital Platforms",
@@ -137,7 +140,8 @@ export const experiences: Experience[] = [
             "Trained and gave necessary guidelines to junior teammates",
             "Migrated full project from Python2 to Python3",
             "Developed and maintailed RESTful APIs with Django"
-        ]
+        ],
+        emoji: "🌱"
     },
     {
         company: "Samsung R&D Institute Bangladesh",
@@ -145,7 +149,8 @@ export const experiences: Experience[] = [
         period: "Aug 2018 - Jan 2019",
         responsibilities: [
             "Learnt and built basic Tizen application"
-        ]
+        ],
+        emoji: "🐣"
     }
 ];
 

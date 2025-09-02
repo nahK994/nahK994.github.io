@@ -56,6 +56,7 @@ export interface Experience {
     role: string;
     period: string;
     responsibilities: string[];
+    emoji: string
 };
 
 export interface Welcome {

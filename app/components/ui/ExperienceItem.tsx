@@ -2,28 +2,23 @@ import { Experience } from "@/content/types";
 import { Card } from "./Card";
 
 type ExperienceProps = {
-  item: Experience;
+    item: Experience;
 };
 
-export function ExperienceItem({item}: ExperienceProps) {
+export function ExperienceItem({ item }: ExperienceProps) {
     return (
-        <Card>
-            <div className={`w-[90%] sm:w-170 -left-2 relative ml-6`}>
-                <div className="absolute w-fit h-fit rounded-full -left-3.5 text-2xl">💡</div>
-                <div className="ml-6">
-                    <h3 className="text-xl font-semibold text-green-800">{item.role}</h3>
-                    <p className="text-lg text-green-700 flex flex-col sm:flex-row gap-1 sm:flex-wrap">
-                        <span className="text-blue-700">{item.company}</span>
-                        <span className="hidden sm:block">|</span>
-                        <span>{item.period}</span>
-                    </p>
-                    {/* <ul className="list-disc list-inside mt-2 text-green-900">
+        <div className="flex bg-white rounded-2xl text-lg px-2 md:px-6 py-3 shadow-md hover:shadow-lg hover:bg-gray-100 transition-all duration-300">
+            <div className="text-2xl">{item.emoji}</div>
+            <div className="flex flex-col ml-6">
+                <h3 className="text-xl font-semibold text-green-800">{item.role}</h3>
+                <span className="text-blue-700">{item.company}</span>
+                <span>{item.period}</span>
+                {/* <ul className="list-disc list-inside mt-2 text-green-900">
                         {exp.responsibilities.map((resp, idx) => (
                             <li key={idx}>{resp}</li>
                         ))}
                     </ul> */}
-                </div>
             </div>
-        </Card>
+        </div>
     )
 }

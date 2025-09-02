@@ -6,7 +6,7 @@ import { ExperienceItem } from "../ui/ExperienceItem";
 export default function Experiences({experiences, sectionId, baseCSS, bgColor}: {experiences: Experience[]; sectionId: string, baseCSS: string, bgColor: string}) {
     return (
         <section id={sectionId} className={`${baseCSS} ${bgColor}`}>
-            <div className="flex flex-wrap">
+            <div className="flex flex-col gap-y-12 flex-wrap">
                     {experiences.map((exp, index) => (
                         // <div key={index} className={`w-[90%] sm:w-170 -left-2 relative ml-6 ${index === experiences.length - 1 ? 'border-l-0 mb-0' : 'pb-8 border-orange-100 border-l-2'}`}>
                         //     <div className="absolute w-fit h-fit rounded-full -left-3.5 text-2xl">💡</div>
