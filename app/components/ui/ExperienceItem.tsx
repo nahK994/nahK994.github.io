@@ -1,6 +1,5 @@
 "use client";
 import { Experience } from "@/content/types";
-import { Card } from "./Card";
 import Popover from '@mui/material/Popover';
 import { useState } from "react";
 
