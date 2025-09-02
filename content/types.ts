@@ -12,13 +12,6 @@ export interface HeroInfo {
     subTitle3: string;
 };
 
-// About Me Section
-export interface AboutMeInfo {
-    myself: string;
-    passion: string;
-    hobby: string;
-};
-
 // Social Profile Links
 export interface SocialProfile {
     url: string;
