@@ -14,7 +14,6 @@ export default function Home() {
     <div className="flex flex-col">
         <Sidebar />
         <Hero sectionId={navItems[0].id} githubUrl={profile.github.url} hero={hero} bgColor={bg1} baseCSS={baseCSS} />
-        {/* <About sectionId={navItems[1].id} aboutMe={aboutMe} bgColor={bg2} baseCSS={baseCSS} /> */}
         <Skills sectionId={navItems[1].id} skill={skill} bgColor={bg2} baseCSS={baseCSS}  />
         <Experiences sectionId={navItems[2].id} experiences={experiences} bgColor={bg1} baseCSS={baseCSS} />
         <ContactMe sectionId={navItems[3].id} profile={profile} welcome={welcome.text} bgColor={bg2} baseCSS={baseCSS} />

@@ -1,11 +1,10 @@
-import { AboutMeInfo, Experience, HeroInfo, NavItem, Profile, SkillCategory, Welcome } from "./types";
+import { Experience, HeroInfo, NavItem, Profile, SkillCategory, Welcome } from "./types";
 
 const isDev = process.env.NODE_ENV === 'development';
 const imgPath = (folder: string, file: string) => `${isDev ? `/${folder}/` : `${folder}/`}${file}`;
 
 export const navItems: NavItem[] = [
     { id: "", label: "Home", icon: "🏠" },
-    // { id: "about", label: "About", icon: "🙋‍♂️" },
     { id: "skills", label: "Skills", icon: "🧩" },
     { id: "experiences", label: "Experiences", icon: "💡" },
     { id: "contact-me", label: "Contact", icon: "☎️" },
@@ -16,12 +15,6 @@ export const hero: HeroInfo = {
     subTitle1: "Software Engineer | Python Charmer 🐍 | Golang Alchemist 🦫",
     subTitle2: "Passionate about building scalable backend systems by crafting clean code 🧹💻",
     subTitle3: "Apart from coding, I’m an anime fan ⛩️, former cyclist 🚴, and hobbyist photographer 📸.",
-}
-
-export const aboutMe: AboutMeInfo = {
-    myself: "I'm Shomi Khan, backend focused full-stack software engineer 🦫🖥️🐍 from Bangladesh 🇧🇩.",
-    passion: "🌥️ Enthusiastic about writing clean code, building cloud-native solutions, ⚙️ diving into low-level systems, 🤖 automating everything possible.",
-    hobby: "Apart from coding, I’m an anime fan ⛩️, former cyclist 🚴, and hobbyist photographer 📸.",
 }
 
 export const profile: Profile = {
@@ -112,7 +105,8 @@ export const experiences: Experience[] = [
             "Designed and implemented data analysis APIs to deliver user activity reports.",
             "Wrote optimized SQL queries for complex aggregations with performance in mind.",
             "Performed refactoring of legecy codes to improve readability, performance and maintainability."
-        ]
+        ],
+        emoji: "💡"
     },
     {
         company: "GroupyFy Inc.",
@@ -125,15 +119,17 @@ export const experiences: Experience[] = [
             "Configured and managed multiple development environments",
             "Collaborated with frontend dev to ensure seamless functionality",
             "Deployed the application on AWS"
-        ]
+        ],
+        emoji: "✨"
     },
     {
         company: "Hubar Tech Limited",
-        role: "Software Engineer",
+        role: "Python Developer",
         period: "Feb 2023 - May 2023",
         responsibilities: [
             "Created RESTful APIs",
-        ]
+        ],
+        emoji: "🐾"
     },
     {
         company: "SELISE Digital Platforms",
@@ -144,7 +140,8 @@ export const experiences: Experience[] = [
             "Trained and gave necessary guidelines to junior teammates",
             "Migrated full project from Python2 to Python3",
             "Developed and maintailed RESTful APIs with Django"
-        ]
+        ],
+        emoji: "🎨"
     },
     {
         company: "Samsung R&D Institute Bangladesh",
@@ -152,7 +149,8 @@ export const experiences: Experience[] = [
         period: "Aug 2018 - Jan 2019",
         responsibilities: [
             "Learnt and built basic Tizen application"
-        ]
+        ],
+        emoji: "🌱"
     }
 ];
 
