@@ -21,10 +21,10 @@ pipeline {
                         git checkout main
                         touch test.sh
                         echo "Hello World!!" >> test.sh
-                        git add test.sh
-                        git commit -m "Add test.sh from Jenkins pipeline"
                         git config user.name "nahK994"
                         git config user.email "nkskl6@gmail.com"
+                        git add test.sh
+                        git commit -m "Add test.sh from Jenkins pipeline"
                         git remote set-url origin https://$GIT_USER:$GIT_TOKEN@github.com/nahK994/nahK994.github.io.git
                         git push origin main
                     '''
