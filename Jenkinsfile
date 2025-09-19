@@ -21,9 +21,8 @@ pipeline {
                         git checkout main
                         git config user.name "nahK994"
                         git config user.email "nkskl6@gmail.com"
-                        rm test.sh
                         git add .
-                        git commit -m "Remove test.sh using Jenkins pipeline"
+                        git commit -m "Update resume using Jenkins pipeline"
                         git remote set-url origin https://$GIT_USER:$GIT_TOKEN@github.com/nahK994/nahK994.github.io.git
                         git push origin main
                     '''
