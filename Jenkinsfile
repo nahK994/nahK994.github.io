@@ -14,7 +14,7 @@ pipeline {
         }
         stage('merge-to-main') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'github-token-nahK994-4',
+                withCredentials([usernamePassword(credentialsId: 'github-token-nahK994-5',
                                                  usernameVariable: 'GIT_USER',
                                                  passwordVariable: 'GIT_TOKEN')]) {
                     sh '''
