@@ -11,7 +11,7 @@ export const navItems: NavItem[] = [
 ];
 
 export const hero: HeroInfo = {
-    title: "Hi, I’m Batman",
+    title: "Hi, I’m Shomi Khan",
     subTitle1: "Software Engineer | Python Charmer 🐍 | Golang Alchemist 🦫",
     subTitle2: "Passionate about building scalable backend systems by crafting clean code 🧹💻",
     subTitle3: "Apart from coding, I’m an anime fan ⛩️, former cyclist 🚴, and hobbyist photographer 📸.",
