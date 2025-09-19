@@ -56,12 +56,12 @@ export const skill: SkillCategory = {
         items: [
             { name: "Django", logo: imgPath("skill", "django.png") },
             { name: "FastAPI", logo: imgPath("skill", "fastapi.png") },
-            { name: "PostgreSQL", logo: imgPath("skill", "postgresql.png") },
             { name: "Gin", logo: imgPath("skill", "gin.png") },
-            { name: "Redis", logo: imgPath("skill", "redis.png") },
-            { name: "REST APIs", logo: null },
-            { name: "gRPC", logo: null },
-            { name: "RabbitMQ", logo: imgPath("skill", "rabbitmq.png") }
+            { name: "PostgreSQL", logo: imgPath("skill", "postgresql.png") },
+            // { name: "REST APIs", logo: null },
+            // { name: "gRPC", logo: null },
+            { name: "RabbitMQ", logo: imgPath("skill", "rabbitmq.png") },
+            { name: "Redis", logo: imgPath("skill", "redis.png") }
         ]
     },
     frontend: {

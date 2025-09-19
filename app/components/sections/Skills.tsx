@@ -3,7 +3,7 @@ import Image from "next/image";
 
 
 function SkillCard({ skill }: { skill: SkillInfo }) {
-    return <div className="bg-white shadow-lg w-full md:max-w-1/4 rounded-2xl">
+    return <div className="bg-white shadow-lg w-full md:max-w-[470px] rounded-2xl">
         <h2 className="text-xl font-bold mb-4 rounded-t-2xl text-gray-600 bg-green-200 p-4">{skill.label}</h2>
         <div className="flex flex-wrap gap-4 px-4 pb-4">
             {skill.items.map((item) => (
