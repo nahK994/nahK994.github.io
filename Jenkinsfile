@@ -22,7 +22,6 @@ pipeline {
                         git config user.email "nkskl6@gmail.com"
                         git checkout main
                         git merge dev
-                        git commit -m "Update resume using Jenkins pipeline"
                         git remote set-url origin https://$GIT_USER:$GIT_TOKEN@github.com/nahK994/nahK994.github.io.git
                         git push origin main
                     '''
