@@ -48,7 +48,7 @@ export function ExperienceItem({ item }: ExperienceProps) {
                 disableRestoreFocus
                 slotProps={{ paper: { style: { borderRadius: '8px' } } }}
             >
-                <div className="p-4 text-gray-600">
+                <div className="p-4 text-gray-600 max-w-md">
                     <div className="font-semibold">Responsibilities</div>
                     <ul className="list-disc list-inside">
                         {item.responsibilities.map((resp, idx) => (
