@@ -1,24 +1,15 @@
-import { SkillCategory, SkillInfo, SkillItem } from "../../../content/types";
+import { SkillCategory, SkillItem } from "../../../content/types";
 import Image from "next/image";
 
 
 export default function Skills({ skill, sectionId, baseCSS, bgColor }: { skill: SkillCategory; sectionId: string, baseCSS: string, bgColor: string }) {
-    let skillList: SkillItem[] = [];
-    skill.language.items.forEach(element => {
-        skillList.push(element);
-    });
-    skill.backend.items.forEach(element => {
-        skillList.push(element);
-    });
-    skill.frontend.items.forEach(element => {
-        skillList.push(element);
-    });
-    skill.devops.items.forEach(element => {
-        skillList.push(element);
-    });
-    skill.tools.items.forEach(element => {
-        skillList.push(element);
-    });
+    const skillList: SkillItem[] = [
+        ...skill.language.items,
+        ...skill.backend.items,
+        ...skill.frontend.items,
+        ...skill.devops.items,
+        ...skill.tools.items,
+    ];
 
     return (
         <section id={sectionId} className={`${baseCSS} ${bgColor}`}>
