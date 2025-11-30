@@ -68,7 +68,7 @@ export const skill: SkillCategory = {
         label: "Frontend",
         items: [
             { name: "Next.js", logo: imgPath("skill", "nextjs.png") },
-            { name: "Angular", logo: imgPath("skill", "angular.png") },
+            // { name: "Angular", logo: imgPath("skill", "angular.png") },
             { name: "TailwindCSS", logo: imgPath("skill", "tailwind-css.png") },
             { name: "HTML", logo: imgPath("skill", "html.png") }
         ]
@@ -78,7 +78,7 @@ export const skill: SkillCategory = {
         items: [
             { name: "Docker", logo: imgPath("skill", "docker.png") },
             { name: "AWS", logo: imgPath("skill", "aws.png") },
-            { name: "Nginx", logo: imgPath("skill", "nginx.png") }
+            // { name: "Nginx", logo: imgPath("skill", "nginx.png") }
         ]
     },
     tools: {
