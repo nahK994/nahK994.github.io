@@ -13,7 +13,7 @@ export default function Skills({ skill, sectionId, baseCSS, bgColor }: { skill: 
 
     return (
         <section id={sectionId} className={`${baseCSS} ${bgColor}`}>
-            <div className="flex flex-wrap gap-4 w-[500px]">
+            <div className="flex flex-wrap gap-4 w-[500px] pb-24">
                 {skillList.map((item) => (
                     <div key={item.name} className="flex items-center shadow-md bg-white p-4 gap-2 rounded-2xl hover:scale-110 transition-transform duration-200 cursor-pointer">
                         {item.logo && <Image src={item.logo} alt={item.name} width={20} height={20} className="w-6 h-6" />}
