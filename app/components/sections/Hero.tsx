@@ -34,7 +34,7 @@ export default function Hero({hero, githubUrl, sectionId, bgColor, baseCSS}: {he
                     Resume
                 </a>
                 <a
-                    href="https://bongo-coder.gitbook.io/notes" target="_blank"
+                    href="https://gorai-coder.gitbook.io/notes" target="_blank"
                     className={`${btnStyle}`}
                 >
                     Blogs
