@@ -25,13 +25,19 @@ export default function Hero({hero, githubUrl, sectionId, bgColor, baseCSS}: {he
                     href={githubUrl} target="_blank"
                     className={`${btnStyle}`}
                 >
-                    My Github Profile
+                    Github Profile
                 </a>
                 <a
                     href="ShomiKhan_Resume.pdf" target="_blank"
                     className={`${btnStyle}`}
                 >
                     Resume
+                </a>
+                <a
+                    href="https://bongo-coder.gitbook.io/notes" target="_blank"
+                    className={`${btnStyle}`}
+                >
+                    Blogs
                 </a>
             </div>
             <div className="text-lg md:text-2xl mt-8 mb-4 text-gray-600">
