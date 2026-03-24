@@ -5,14 +5,14 @@ export default function Hero({hero, githubUrl, sectionId, bgColor, baseCSS}: {he
 
     return <section id={sectionId} className={`${baseCSS} ${bgColor}`}>
         <div className="text-center flex flex-col items-center animate-fadeIn md:px-4 px-0">
-            <div className="text-3xl md:text-5xl font-bold flex flex-wrap justify-center items-center my-8 md:mb-16 md:mt-0">
-                <span className="animate-wave">👋</span>
-                <span className="mb-2 mr-4">🤓</span>
-                <span className="text-green-700 drop-shadow-2xl mr-2">Hey there!!</span>
-                <span>🎉</span>
-            </div>
-            <div className="font-semibold text-2xl md:text-3xl mb-4 text-gray-600">
-                {hero.title}
+            <div className="flex flex-wrap justify-center items-center">
+                <div className="text-4xl font-bold flex flex-wrap justify-center items-center mb-4">
+                    <span className="animate-wave">👋</span>
+                    <span className="mb-2 mr-4">🤓</span>
+                </div>
+                <div className="font-semibold text-2xl md:text-3xl mb-4 text-gray-600">
+                    {hero.title}
+                </div>
             </div>
             <div className="text-lg md:text-2xl mb-4 text-gray-600">
                 {hero.subTitle1}
