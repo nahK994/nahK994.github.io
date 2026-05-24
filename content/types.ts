@@ -9,7 +9,6 @@ export interface HeroInfo {
     title: string;
     subTitle1: string;
     subTitle2: string;
-    subTitle3: string;
 };
 
 // Social Profile Links
