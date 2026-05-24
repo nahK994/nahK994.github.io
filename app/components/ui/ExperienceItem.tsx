@@ -46,11 +46,11 @@ export function ExperienceItem({ item }: ExperienceProps) {
                 }}
                 onClose={handlePopoverClose}
                 disableRestoreFocus
-                slotProps={{ paper: { style: { borderRadius: '8px' } } }}
+                slotProps={{ paper: { style: { borderRadius: '8px', width: '500px' } } }}
             >
                 <div className="p-4 text-gray-600 max-w-md">
                     <div className="font-semibold">Responsibilities</div>
-                    <ul className="list-disc list-inside">
+                    <ul className="list-disc pl-5 space-y-1">
                         {item.responsibilities.map((resp, idx) => (
                             <li key={idx}>{resp}</li>
                         ))}
