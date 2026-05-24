@@ -12,9 +12,8 @@ export const navItems: NavItem[] = [
 
 export const hero: HeroInfo = {
     title: "Hi, I’m Shomi Khan",
-    subTitle1: "Backend Engineer (Go, Python) | Low-Level Curious",
-    subTitle2: "",
-    subTitle3: "Apart from coding, I’m an anime fan ⛩️, former cyclist 🚴, and hobbyist photographer 📸.",
+    subTitle1: "Software Engineer (Go, Python)",
+    subTitle2: "Apart from coding, I’m an anime fan ⛩️, former cyclist 🚴, and hobbyist photographer 📸.",
 }
 
 export const profile: Profile = {

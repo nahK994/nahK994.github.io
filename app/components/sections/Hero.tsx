@@ -17,9 +17,6 @@ export default function Hero({hero, githubUrl, sectionId, bgColor, baseCSS}: {he
             <div className="text-lg md:text-2xl mb-4 text-gray-600">
                 {hero.subTitle1}
             </div>
-            <div className="text-lg md:text-2xl mb-8 text-gray-600">
-                {hero.subTitle2}
-            </div>
             <div className="flex flex-row flex-wrap justify-center items-center gap-4">
                 <a
                     href={githubUrl} target="_blank"
@@ -33,15 +30,9 @@ export default function Hero({hero, githubUrl, sectionId, bgColor, baseCSS}: {he
                 >
                     Resume
                 </a>
-                <a
-                    href="https://gorai-coder.gitbook.io/notes" target="_blank"
-                    className={`${btnStyle}`}
-                >
-                    Blogs
-                </a>
             </div>
             <div className="text-lg md:text-2xl mt-8 mb-4 text-gray-600">
-                {hero.subTitle3}
+                {hero.subTitle2}
             </div>
         </div>
     </section>
