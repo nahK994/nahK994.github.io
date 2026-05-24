@@ -118,7 +118,6 @@ export const experiences: Experience[] = [
             "Developed and maintained RESTful APIs with Django",
             "Improved API performance by implementing asynchronous tasks",
             "Integrated secure and seamless payment workflows with Stripe",
-            "Configured and managed multiple development environments",
             "Collaborated with frontend dev to ensure seamless functionality",
             "Deployed the application on AWS"
         ],
