@@ -102,9 +102,11 @@ export const experiences: Experience[] = [
         role: "Software Engineer 2",
         period: "May 2025 - Present",
         responsibilities: [
-            "Designed and implemented data analysis APIs to deliver user activity reports.",
-            "Wrote optimized SQL queries for complex aggregations with performance in mind.",
-            "Performed refactoring of legecy codes to improve readability, performance and maintainability."
+            "Owned backend feature delivery lifecycle, including requirement analysis, API design, architecture contribution, implementation, testing support, and bug resolution.",
+            "Proactively identified edge cases and translated product requirements into scalable backend solutions.",
+            "Drove API contract discussions with frontend teams using product flows and Figma designs to align business and technical requirements.",
+            "Contributed to architecture and database design decisions to ensure maintainability, scalability, and performance.",
+            "Adopted AI-assisted engineering practices by preparing detailed technical prompts and validating implementation strategies using tools such as ChatGPT, Cursor etc."
         ],
         emoji: "💡"
     },
